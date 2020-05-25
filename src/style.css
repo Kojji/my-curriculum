@@ -1,3 +1,14 @@
-.hello {
-  color: red;
+ul.toolbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.toolbar li {
+  float: left;
+}
+
+ul.toolbar li:hover {
+  background-color: #111;
 }
