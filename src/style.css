@@ -1,3 +1,54 @@
+@media screen and (min-width: 1904px) {
+  .toolbar-button img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
+@media screen and (max-width: 1904px) {
+  .toolbar-button img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+@media screen and (max-width: 1264px) {
+  .toolbar-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .toolbar-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.sideMenu {
+  background-color: aqua;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+}
+
+.toolbar-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.toolbar-button:hover {
+  background-color: rgba(233, 89, 113, 0.3);
+}
+
 ul.toolbar {
   list-style-type: none;
   margin: 0;
@@ -7,8 +58,4 @@ ul.toolbar {
 
 ul.toolbar li {
   float: left;
-}
-
-ul.toolbar li:hover {
-  background-color: #111;
 }
