@@ -44,11 +44,12 @@ body {
 }
 
 .side-menu {
-  grid-area: s;
+  /* visibility: hidden; */
+  grid-column: span 2;
   background-color: aqua;
   height: 100%;
-  /* position: fixed;
   z-index: 1;
+  /* position: fixed;
   transition: 0.3s;
   overflow-x: hidden;
   top: 0;
@@ -56,8 +57,11 @@ body {
 }
 
 .toolbar-button {
+  display: block;
   border: none;
   background-color: transparent;
+  margin: auto;
+  line-height: 100vh;
   /* cursor: pointer; */
 }
 
@@ -68,6 +72,14 @@ ul.toolbar {
   overflow: hidden;
 }
 
+.menu-side-icon {
+  position: fixed;
+  background-color: transparent;
+  width:10vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
 /* .container {
   
 } */
@@ -78,17 +90,18 @@ ul.toolbar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-    "s m m m"
-    "s m m m"
-    "s m m m"
+    "m m m m"
+    "m m m m"
+    "m m m m"
     "f f f f";
 }
 
 .footer {
+  background-color: white;
   text-align: center;
   grid-area: f;
+  z-index: 2;
 }
-
 
 .row {
   width: 100%;
@@ -97,13 +110,18 @@ ul.toolbar {
 }
 .main {
   grid-area: m;
+  overflow-y: scroll;
 }
 .col {
   grid-column: span 5;
 }
+.col-12 {
+  grid-column: span 12;
+}
 
 #item1 {
   background-color: lime;
+  height: 200px;
 }
 #item2 {
   background-color: red;
