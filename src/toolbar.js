@@ -15,14 +15,18 @@ var menu = {
   } */
 }
 
+function openSelectFlag() {
+  console.log("flag select")
+}
+
 function openSideMenu() {
-  document.getElementById("sideMenu").style["width"] = '30%';
+  document.getElementById("sideMenu").style["width"] = '25%';
   menu.state =true
   /* if(menu.getState) menu.state = false;
   else menu.state =true; */
 }
 
-export function sideMenu() {
+export function sideMenuComponent() {
   let sideMenu = document.createElement('div');
   sideMenu.setAttribute("id", "sideMenu");
   sideMenu.innerHTML = menu.text
@@ -39,16 +43,34 @@ export function toolbarComponent() {
 
   const myIcon = new Image();
   myIcon.src = menuIcon;
-  let button = document.createElement('button');
-  button.classList.add('toolbar-button');
-  button.appendChild(myIcon);
-  button.onmouseover = openSideMenu;
+  let menuButton = document.createElement('button');
+  menuButton.classList.add('toolbar-button');
+  menuButton.appendChild(myIcon);
+  menuButton.onmouseover = openSideMenu;
 
-  let listElement = document.createElement('li');
-  listElement.appendChild(button);
+
+  let flagButton = document.createElement('select');
+  let option1 = document.createElement('option');
+  option1.value = 'pt-br';
+  option1.innerHTML = 'pt-br';
+  let option2 = document.createElement('option');
+  option2.value = 'en-us';
+  option2.innerHTML = 'en-us';
+  flagButton.appendChild(option1);
+  flagButton.appendChild(option2);
+  flagButton.onchange = openSelectFlag;
+
+  let menuElement = document.createElement('li');
+  menuElement.appendChild(menuButton);
+  menuElement.style["float"] = "left";
+  
+  let flagElement = document.createElement('li');
+  flagElement.appendChild(flagButton);
+  flagElement.style["float"] = "right";
 
   let iconList = document.createElement('ul');
-  iconList.appendChild(listElement);
+  iconList.appendChild(menuElement);
+  iconList.appendChild(flagElement);
   iconList.classList.add('toolbar');
 
   

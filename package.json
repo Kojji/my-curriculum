@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --mode=production",
+    "serve": "node dev.js"
   },
   "author": "Fernando Koji",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "webpack-dev-server": "^3.11.0"
   }
 }

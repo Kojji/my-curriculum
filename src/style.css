@@ -42,11 +42,7 @@
 .toolbar-button {
   border: none;
   background-color: transparent;
-  cursor: pointer;
-}
-
-.toolbar-button:hover {
-  background-color: rgba(233, 89, 113, 0.3);
+  /* cursor: pointer; */
 }
 
 ul.toolbar {
@@ -54,8 +50,4 @@ ul.toolbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-ul.toolbar li {
-  float: left;
 }
