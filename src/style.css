@@ -1,7 +1,13 @@
+body {
+  margin: 0;
+}
 @media screen and (min-width: 1904px) {
   .toolbar-button img {
     width: 48px;
     height: 48px;
+  }
+  .layout {
+    grid-template-rows: 1fr 1fr 1fr 30px;
   }
 }
 
@@ -11,6 +17,9 @@
     width: 32px;
     height: 32px;
   }
+  .layout {
+    grid-template-rows: 1fr 1fr 1fr 25px;
+  }
 }
 
 
@@ -19,6 +28,9 @@
     width: 24px;
     height: 24px;
   }
+  .layout {
+    grid-template-rows: 1fr 1fr 1fr 20px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -26,17 +38,21 @@
     width: 24px;
     height: 24px;
   }
+  .layout {
+    grid-template-rows: 1fr 1fr 1fr 20px;
+  }
 }
 
-.sideMenu {
+.side-menu {
+  grid-area: s;
   background-color: aqua;
-  position: fixed;
   height: 100%;
+  /* position: fixed;
   z-index: 1;
   transition: 0.3s;
   overflow-x: hidden;
   top: 0;
-  left: 0;
+  left: 0; */
 }
 
 .toolbar-button {
@@ -56,12 +72,32 @@ ul.toolbar {
   
 } */
 
+.layout {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "s m m m"
+    "s m m m"
+    "s m m m"
+    "f f f f";
+}
+
+.footer {
+  text-align: center;
+  grid-area: f;
+}
+
+
 .row {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-
+.main {
+  grid-area: m;
+}
 .col {
   grid-column: span 5;
 }
@@ -71,4 +107,10 @@ ul.toolbar {
 }
 #item2 {
   background-color: red;
+}
+#item3 {
+  background-color: blue;
+}
+#item4 {
+  background-color: orange;
 }
