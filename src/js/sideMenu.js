@@ -1,6 +1,6 @@
 // import _ from 'lodash';
-import './style.css';
-import menuIcon from './assets/menu-24px.svg'
+import '../style.css';
+import menuIcon from '../assets/menu-24px.svg'
 
 // var menu = {
 //   state: false,

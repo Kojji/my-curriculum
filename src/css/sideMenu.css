@@ -1,0 +1,56 @@
+@media screen and (min-width: 1904px) {
+  .menu-button img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 1904px) {
+  .menu-button img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .menu-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+#side-menu {
+  width: 0;
+  background-color: aqua;
+  height: 100%;
+  z-index: 2;
+  position: fixed;
+  transition: 0.3s;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+}
+
+.menu-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: auto;
+  line-height: 100vh;
+}
+
+#menu-side-icon {
+  position: fixed;
+  background-color: transparent;
+  width:10vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
