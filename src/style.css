@@ -2,13 +2,15 @@
 @import "./css/footer.css";
 @import "./css/sideMenu.css";
 @import "./css/animationBanner.css";
+@import "./css/contacts.css";
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .main {
-  grid-area: m;
+  /* grid-area: m; */
   overflow-y: scroll;
 }
 

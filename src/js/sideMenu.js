@@ -1,4 +1,3 @@
-// import _ from 'lodash';
 import '../style.css';
 import menuIcon from '../assets/menu-24px.svg'
 
@@ -15,14 +14,19 @@ import menuIcon from '../assets/menu-24px.svg'
 //   } */
 // }
 
+var iconeMenu = document.getElementById('menu-icon');
+var iconeMenuArea = document.getElementById('menu-side-icon');
+var menu = document.getElementById("side-menu");
+var selectLanguage = document.getElementById('language-select');
+
 export function setSideMenu() {
   const myIcon = new Image();
   myIcon.src = menuIcon;
   let menuButton = document.createElement('button');
   menuButton.classList.add('menu-button');
   menuButton.appendChild(myIcon);
-  document.getElementById('menu-icon').appendChild(menuButton);
-  document.getElementById('menu-side-icon').onmouseover = openSideMenu;
+  iconeMenu.appendChild(menuButton);
+  iconeMenuArea.onmouseover = openSideMenu;
   
   setLanguageSelection();
   
@@ -30,7 +34,7 @@ export function setSideMenu() {
 }
 
 function closeMenu() {
-  document.getElementById("side-menu").style["width"] = '0';
+  menu.style["width"] = '0';
 }
 
 function setLanguageSelection() {
@@ -44,7 +48,7 @@ function setLanguageSelection() {
   flagButton.appendChild(option1);
   flagButton.appendChild(option2);
   flagButton.onchange = openSelectFlag;
-  document.getElementById('language-select').appendChild(flagButton);
+  selectLanguage.appendChild(flagButton);
 }
 
 function openSelectFlag() {
@@ -52,7 +56,6 @@ function openSelectFlag() {
 }
 
 function openSideMenu() {
-  document.getElementById("side-menu").style["width"] = '20%';
-  document.getElementById("side-menu").addEventListener("mouseleave", closeMenu);
-  
+  menu.style["width"] = '20%';
+  menu.addEventListener("mouseleave", closeMenu);
 }

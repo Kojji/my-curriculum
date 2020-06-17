@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 1904px) {
+/* @media screen and (min-width: 1904px) {
   .layout {
     grid-template-rows: 1fr 1fr 1fr 30px;
   }
@@ -21,7 +21,7 @@
   .layout {
     grid-template-rows: 1fr 1fr 1fr 20px;
   }
-}
+} */
 
 .container {
   max-width: 400px;
@@ -33,13 +33,13 @@
 .layout {
   height: 100vh;
   width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-areas:
     "m m m m"
     "m m m m"
     "m m m m"
-    "f f f f";
+    "f f f f"; */
 }
 
 .row {

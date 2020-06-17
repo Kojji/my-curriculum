@@ -1,6 +1,7 @@
 .footer {
   background-color: white;
   text-align: center;
-  grid-area: f;
+  /* grid-area: f; */
   z-index: 10;
+  height: 30px;
 }
