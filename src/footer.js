@@ -1,4 +1,4 @@
-export function footerText() {
+export function setFooter() {
   let date = new Date();
-  return `${date.getFullYear()} - Fernando Koji`
+  document.getElementById('footer-text').innerHTML = `${date.getFullYear()} - Fernando Koji`;
 }
