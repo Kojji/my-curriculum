@@ -1,6 +1,7 @@
 @import "./css/grid.css";
 @import "./css/footer.css";
 @import "./css/sideMenu.css";
+@import "./css/animationBanner.css";
 
 body {
   margin: 0;
