@@ -48,6 +48,9 @@ function setLanguageSelection() {
   flagButton.appendChild(option1);
   flagButton.appendChild(option2);
   flagButton.onchange = openSelectFlag;
+  flagButton.style["display"] = "block";
+  flagButton.style["margin"] = "10px";
+  flagButton.style["float"] = "right";
   selectLanguage.appendChild(flagButton);
 }
 
