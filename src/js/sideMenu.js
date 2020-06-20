@@ -42,21 +42,29 @@ function setLanguageSelection() {
   let option1 = document.createElement('option');
   option1.value = 'pt-br';
   option1.innerHTML = 'pt-br';
+  option1.selected = selectedPt();
   let option2 = document.createElement('option');
   option2.value = 'en-us';
   option2.innerHTML = 'en-us';
+  option2.selected = selectedEn();
   flagButton.appendChild(option1);
   flagButton.appendChild(option2);
-  flagButton.onchange = openSelectFlag;
   flagButton.style["display"] = "block";
   flagButton.style["margin"] = "10px";
   flagButton.style["float"] = "right";
   selectLanguage.appendChild(flagButton);
 }
 
-function openSelectFlag() {
-  console.log("flag select")
+function selectedEn() {
+  console.log("en")
+  //window.location.href = '/en';
 }
+
+function selectedPt() {
+  console.log("pt")
+  //window.location.href = '/pt';
+}
+
 
 function openSideMenu() {
   menu.style["width"] = '20%';

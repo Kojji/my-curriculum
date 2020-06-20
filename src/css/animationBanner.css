@@ -29,6 +29,19 @@
 }
 
 #animation-banner {
+  opacity: 1;
   height: 60vh;
   background-color: deeppink;
+}
+
+#hover-animation-banner {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  transition: 1.5s;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
