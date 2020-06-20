@@ -3,6 +3,7 @@
 @import "./css/sideMenu.css";
 @import "./css/animationBanner.css";
 @import "./css/contacts.css";
+@import "./css/mainContent.css";
 
 body {
   margin: 0;
