@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="container animation-tile">
     <h1>Animation</h1>
   </div>
 </template>
@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style scoped>
-.hello {height: 50vh;}
+.animation-tile{height: 50vh;}
 </style>

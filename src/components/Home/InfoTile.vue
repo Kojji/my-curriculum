@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="container">
     <div class="glass menu">
       <!-- <div class="glass-window"> -->
       <div>
