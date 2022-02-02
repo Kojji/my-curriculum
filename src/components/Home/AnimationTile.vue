@@ -11,4 +11,5 @@ export default {
 </script>
 
 <style scoped>
+.hello {height: 50vh;}
 </style>
