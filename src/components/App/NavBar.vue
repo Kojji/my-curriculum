@@ -1,15 +1,18 @@
 <template>
   <div class="hello">
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light" style="background-color: rgba(0, 0, 0, 0.05);">
       <div class="container-fluid">
         <a class="navbar-brand">Fernando Koji Yamashiro</a>
-        <div class="dropdown">
+        <div class="dropdown btn-group">
           <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownFlag" data-bs-toggle="dropdown" aria-expanded="false">
             {{language}}
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownFlag1">
-            <li><a class="dropdown-item" @click="language = 'Português[BR]'">Português[BR]</a></li>
-            <li><a class="dropdown-item" @click="language = 'English[US]'">English[US]</a></li>
+          <!-- <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" type="button" id="dropdownFlag" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button> -->
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" @click="language = 'Português'">Português</a></li>
+            <li><a class="dropdown-item" @click="language = 'English'">English</a></li>
           </ul>
         </div>
       </div>
@@ -22,7 +25,7 @@ export default {
   name: 'NavBar',
   data() {
     return {
-      language: 'Português[BR]'
+      language: 'Português'
     }
   }
 }
