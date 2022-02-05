@@ -1,14 +1,22 @@
 <template>
-  <div class="container">
+  <div>
     <div class="glass menu">
       <!-- <div class="glass-window"> -->
       <div>
-        <ul class="nav justify-content-center nav-tabs">
-          <li class="nav-item" id="Experience" @click="horizontalMenuState = 'Experience'"><a class="nav-link">Experiences</a></li>
-          <li class="nav-item" id="Personal" @click="horizontalMenuState = 'Personal'"><a class="nav-link">Personal</a></li>
-          <li class="nav-item" id="Skills" @click="horizontalMenuState = 'Skill'"><a class="nav-link">Skills</a></li>
-          <li class="nav-item" id="Education" @click="horizontalMenuState = 'Education'"><a class="nav-link">Education</a></li>
-        </ul>
+        <div class="nav justify-content-center horizontal-menu">
+          <div :class="horizontalMenuState == 'Experience'? 'item selected' : 'item'" id="Experience" @click="horizontalMenuState = 'Experience'">
+            <a>Experiences</a>
+          </div>
+          <div :class="horizontalMenuState == 'Personal'? 'item selected' : 'item'" id="Personal" @click="horizontalMenuState = 'Personal'">
+            <a>Personal</a>
+          </div>
+          <div :class="horizontalMenuState == 'Skill'? 'item selected' : 'item'" id="Skills" @click="horizontalMenuState = 'Skill'">
+            <a>Skills</a>
+          </div>
+          <div :class="horizontalMenuState == 'Education'? 'item selected' : 'item'" id="Education" @click="horizontalMenuState = 'Education'">
+            <a>Education</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="information">
@@ -46,6 +54,19 @@ export default {
 
 <style scoped>
 
+@media (max-width: 575.98px) {
+  /* .horizontal-menu{padding: 2px;} */
+  .link{font-size: 10px;}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .link{font-size: 15px;}
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) { 
+  .link{font-size: 20px;}
+} */
+
 .glass-window{
   width:100px;
   margin:auto;
@@ -56,10 +77,38 @@ export default {
 
 .horizontal-menu{
   transition: all .8s;
+  margin-bottom: 5px;
+}
+
+.item{
+  padding: 10px 15px;
+  margin: 5px 4px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.item a{
+  font-weight: bold;
+}
+
+.item:hover{
+  padding: 15px 15px;
+  margin: 0px 4px;
 }
 
 .information{
   min-height: 30vh;
+}
+
+.link{
+  
+}
+
+.selected{
+  padding: 15px 15px !important;
+  margin: 0px 4px !important;
+  background:red;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 
