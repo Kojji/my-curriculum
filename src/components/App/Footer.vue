@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
       <section
@@ -12,7 +12,7 @@
           <a href="" class="me-4 text-reset">
             <i class="fab fa-linkedin fa-lg"></i>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="" class="text-reset">
             <i class="fab fa-github fa-lg"></i>
           </a>
         </div>

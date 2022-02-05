@@ -3,11 +3,11 @@
     <div class="glass menu">
       <!-- <div class="glass-window"> -->
       <div>
-        <ul class="horizontal-menu">
-          <li id="Experience" @click="horizontalMenuState = 'Experience'">Experiences</li>
-          <li id="Personal" @click="horizontalMenuState = 'Personal'">Personal</li>
-          <li id="Skills" @click="horizontalMenuState = 'Skill'">Skills</li>
-          <li id="Education" @click="horizontalMenuState = 'Education'">Education</li>
+        <ul class="nav justify-content-center nav-tabs">
+          <li class="nav-item" id="Experience" @click="horizontalMenuState = 'Experience'"><a class="nav-link">Experiences</a></li>
+          <li class="nav-item" id="Personal" @click="horizontalMenuState = 'Personal'"><a class="nav-link">Personal</a></li>
+          <li class="nav-item" id="Skills" @click="horizontalMenuState = 'Skill'"><a class="nav-link">Skills</a></li>
+          <li class="nav-item" id="Education" @click="horizontalMenuState = 'Education'"><a class="nav-link">Education</a></li>
         </ul>
       </div>
     </div>
@@ -55,15 +55,7 @@ export default {
 }
 
 .horizontal-menu{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  transition: all .6s;
-}
-.horizontal-menu li{
-  cursor: pointer;
-  list-style-type: none;
+  transition: all .8s;
 }
 
 .information{
