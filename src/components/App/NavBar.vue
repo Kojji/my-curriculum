@@ -11,8 +11,8 @@
             <span class="visually-hidden">Toggle Dropdown</span>
           </button> -->
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" @click="language = 'Português'">Português</a></li>
-            <li><a class="dropdown-item" @click="language = 'English'">English</a></li>
+            <li><a class="dropdown-item" @click="changeLocale('pt'), language = 'Português'">Português</a></li>
+            <li><a class="dropdown-item" @click="changeLocale('en'), language = 'English'">English</a></li>
           </ul>
         </div>
       </div>
@@ -25,7 +25,12 @@ export default {
   name: 'NavBar',
   data() {
     return {
-      language: 'Português'
+      language: 'English'
+    }
+  },
+  methods: {
+    changeLocale(location) {
+      this.$i18n.locale = location
     }
   }
 }

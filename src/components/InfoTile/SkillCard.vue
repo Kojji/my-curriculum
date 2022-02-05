@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Skills Card</h1>
+    <h1>{{$t('SkillCardMessage')}}</h1>
   </div>
 </template>
 

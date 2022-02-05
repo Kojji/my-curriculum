@@ -5,6 +5,9 @@ const routes = [
   {
     path: '/',
     name: 'Home',
+    // meta: {
+    //   title: "Fernando Koji Yamashiro - Portfolio"
+    // },
     component: Home
   },
   {
