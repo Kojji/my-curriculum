@@ -21,11 +21,12 @@
 </template>
 
 <script>
+import detectLanguage from "@/assets/languageDetect"
 export default {
   name: 'NavBar',
   data() {
     return {
-      language: 'English'
+      language: detectLanguage() == 'pt' ? 'Português' : 'English'
     }
   },
   methods: {

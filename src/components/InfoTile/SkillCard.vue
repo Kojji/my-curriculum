@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>{{$t('SkillCardMessage')}}</h1>
     <h1> fazer uma representação visual e texto introdutório</h1>
     <h1>Programming</h1>
     <div class="section">Vue</div>

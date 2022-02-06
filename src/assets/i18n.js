@@ -6,7 +6,16 @@ export default {
       PersonalItem: "About Me",
       SkillItem: "Skills"
     },
-    SkillCardMessage: "Ingles"
+    InfoCards: {
+      Education: {
+        TitleFirst: "Education Background",
+        TitleSecond: "Certifications"
+      },
+      Personal: {
+        TitleFirst: "About Me",
+        ParagraphFirst: "",
+      }
+    }
   },
   'pt': {
     HorizontalMenu: {
@@ -15,6 +24,15 @@ export default {
       PersonalItem: "Sobre Mim",
       SkillItem: "Habilidades"
     },
-    SkillCardMessage: "Portugues"
+    InfoCards: {
+      Education: {
+        TitleFirst: "Formação Acadêmica",
+        TitleSecond: "Certificações"
+      },
+      Personal: {
+        TitleFirst: "Sobre Mim",
+        ParagraphFirst: "Olá, ",
+      }
+    }
   }
 }

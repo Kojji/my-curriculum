@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>About Me</h1>
+    <h1>{{$t('InfoCards.Personal.TitleFirst')}}</h1>
     <img :src="photo" class="photo-slot my-3" alt="...">
     <div class="about-me-text">
       <p>
