@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start text-muted" style="background-color: var(--light-color);">
       <!-- Section: Social media -->
       <section
         class="d-flex justify-content-center p-4 border-bottom"
@@ -114,4 +114,7 @@ export default {
 </script>
 
 <style scoped>
+.fab{
+  color: var(--accent-color);
+}
 </style>

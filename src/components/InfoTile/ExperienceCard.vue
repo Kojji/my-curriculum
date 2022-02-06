@@ -131,4 +131,9 @@ export default {
 </script>
 
 <style scoped>
+.accordion-button:not(.collapsed){
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  font-weight: bold;
+}
 </style>

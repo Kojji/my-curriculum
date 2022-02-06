@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
-    <nav class="navbar navbar-light" style="background-color: rgba(0, 0, 0, 0.05);">
+    <nav class="navbar navbar-light" style="background-color: var(--light-color);">
       <div class="container-fluid">
-        <a class="navbar-brand">Fernando Koji Yamashiro</a>
+        <a class="navbar-brand portfolio-title">Fernando Koji Yamashiro</a>
         <div class="dropdown btn-group">
-          <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownFlag" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-sm dropdown-toggle text-light" style="background-color: var(--accent-color);" type="button" id="dropdownFlag" data-bs-toggle="dropdown" aria-expanded="false">
             {{language}}
           </button>
           <!-- <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" type="button" id="dropdownFlag" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,4 +39,8 @@ export default {
 
 <style scoped>
 .navbar {padding: 2px !important}
+
+.portfolio-title{
+  font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif;
+}
 </style>

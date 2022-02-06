@@ -26,16 +26,10 @@ export default {
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+:root{
+  --light-color: #ecf2f7;
+  --primary-color: #9ab8c9;
+  --secondary-color: #6490ac;
+  --accent-color: #385E72;
 }
 </style>

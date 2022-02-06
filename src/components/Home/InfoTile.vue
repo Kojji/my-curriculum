@@ -104,22 +104,21 @@ export default {
 .item:hover{
   margin: 0px 4px;
   padding: 15px 15px;
+  background-color: var(--primary-color);
+  color: black !important;
 }
 
 .information{
   min-height: 30vh;
 }
 
-.link{
-  
-}
-
 .selected{
   padding: 15px 15px !important;
   margin: 0px 4px !important;
-  background:red;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--accent-color);
+  border-color: var(--light-color);
+  color: var(--light-color);
+  /* cursor: not-allowed; */
 }
-
 
 </style>
