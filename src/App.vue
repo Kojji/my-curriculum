@@ -31,5 +31,6 @@ export default {
   --primary-color: #9ab8c9;
   --secondary-color: #6490ac;
   --accent-color: #385E72;
+  --bottom-margin: 25px;
 }
 </style>

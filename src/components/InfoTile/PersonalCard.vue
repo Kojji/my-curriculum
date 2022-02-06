@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="personal-card">
     <h1>{{$t('InfoCards.Personal.TitleFirst')}}</h1>
     <img :src="photo" class="photo-slot my-3" alt="...">
     <div class="about-me-text">
@@ -31,14 +31,18 @@ export default {
 </script>
 
 <style scoped>
+.about-me-text p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .photo-slot{
   width: 15%;
   border-radius: 50%;
   background: red;
 }
 
-.about-me-text p{
-  text-align: justify;
-  text-justify: inter-word;
+#personal-card{
+  margin-bottom: var(--bottom-margin);
 }
 </style>

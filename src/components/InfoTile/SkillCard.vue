@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="skill-card">
     <h1> fazer uma representação visual e texto introdutório</h1>
     <h1>Programming</h1>
     <div class="section">Vue</div>
@@ -19,4 +19,7 @@ export default {
 </script>
 
 <style scoped>
+#skill-card{
+  margin-bottom: var(--bottom-margin);
+}
 </style>
