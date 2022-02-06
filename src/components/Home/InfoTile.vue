@@ -2,19 +2,19 @@
   <div>
     <div class="glass menu">
       <!-- <div class="glass-window"> -->
-      <div>
+      <div class="flex">
         <div class="nav justify-content-center horizontal-menu">
-          <div :class="horizontalMenuState == 'Experience'? 'item selected' : 'item'" id="Experience" @click="horizontalMenuState = 'Experience'">
-            <a>Experiences</a>
-          </div>
           <div :class="horizontalMenuState == 'Personal'? 'item selected' : 'item'" id="Personal" @click="horizontalMenuState = 'Personal'">
-            <a>Personal</a>
+            <a>{{$t('HorizontalMenu.PersonalItem')}}</a>
+          </div>
+          <div :class="horizontalMenuState == 'Experience'? 'item selected' : 'item'" id="Experience" @click="horizontalMenuState = 'Experience'">
+            <a>{{$t('HorizontalMenu.ExperienceItem')}}</a>
           </div>
           <div :class="horizontalMenuState == 'Skill'? 'item selected' : 'item'" id="Skills" @click="horizontalMenuState = 'Skill'">
-            <a>Skills</a>
+            <a>{{$t('HorizontalMenu.SkillItem')}}</a>
           </div>
           <div :class="horizontalMenuState == 'Education'? 'item selected' : 'item'" id="Education" @click="horizontalMenuState = 'Education'">
-            <a>Education</a>
+            <a>{{$t('HorizontalMenu.EducationItem')}}</a>
           </div>
         </div>
       </div>
@@ -43,24 +43,33 @@ export default {
   },
   data() {
     return{
-      horizontalMenuState: "Experience"
+      horizontalMenuState: "Personal"
     }
   },
   mounted() {
-    this.horizontalMenuState = "Experience"
+    this.horizontalMenuState = "Personal"
   }
 }
 </script>
 
 <style scoped>
 
-@media (max-width: 575.98px) {
-  /* .horizontal-menu{padding: 2px;} */
+/* @media (max-width: 575.98px) {
   .link{font-size: 10px;}
-}
+} */
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .link{font-size: 15px;}
+@media (max-width: 767.98px) {
+  .item{
+    padding: 5px 10px;
+    margin: 5px 4px;
+  }
+  .item a{
+    font-size: 13px;
+  }
+  .item:hover{
+    padding: 10px 10px;
+    margin: 0px 4px;
+  }
 }
 
 /* @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -76,15 +85,16 @@ export default {
 }
 
 .horizontal-menu{
-  transition: all .8s;
   margin-bottom: 5px;
 }
 
 .item{
+  transition: all .3s;
   padding: 10px 15px;
   margin: 5px 4px;
   border-style: solid;
   cursor: pointer;
+  border-width: 1px;
 }
 
 .item a{
@@ -92,8 +102,8 @@ export default {
 }
 
 .item:hover{
-  padding: 15px 15px;
   margin: 0px 4px;
+  padding: 15px 15px;
 }
 
 .information{
