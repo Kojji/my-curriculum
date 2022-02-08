@@ -6,19 +6,19 @@
         class="d-flex justify-content-center p-4 border-bottom"
       >
         <div style="font-size: 1.2rem;color: var(--accent-color);">
-          <a href="" class="me-4 text-reset">
+          <a href="" class="mx-2 text-reset">
             <i class="fab fa-instagram fa-lg"></i>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="" class="mx-2 text-reset">
             <i class="fab fa-linkedin fa-lg"></i>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="" class="mx-2 text-reset">
             <i class="fab fa-github fa-lg"></i>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="" class="mx-2 text-reset">
             <i class="fas fa-envelope fa-lg"></i>
           </a>
-          <a href="" class="text-reset">
+          <a href="" class="mx-2 text-reset">
             <i class="fab fa-whatsapp fa-lg"></i>
           </a>
 

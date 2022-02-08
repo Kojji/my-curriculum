@@ -9,7 +9,7 @@
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#education-accordion">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          <div class="accordion-body">{{$t('InfoCards.Education.ItemTextOne')}}</div>
         </div>
       </div>
       <div class="accordion-item">
@@ -19,7 +19,7 @@
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#education-accordion">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          <div class="accordion-body">{{$t('InfoCards.Education.ItemTextTwo')}}</div>
         </div>
       </div>
       
@@ -67,6 +67,11 @@ export default {
 </script>
 
 <style scoped>
+.accordion-body{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .accordion-button:not(.collapsed){
   background-color: var(--secondary-color);
   color: var(--light-color);
