@@ -1,5 +1,5 @@
 <template>
-  <div class="animation-tile">
+  <div class="animation-tile container my-4">
     <div class="strip"></div>
     <div class="strip layer-2"></div>
     <div class="strip layer-3"></div>

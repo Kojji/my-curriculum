@@ -6,20 +6,20 @@
         class="d-flex justify-content-center p-4 border-bottom"
       >
         <div style="font-size: 1.2rem;color: var(--accent-color);">
-          <a href="" class="mx-2 text-reset">
-            <i class="fab fa-instagram fa-lg"></i>
+          <a href="https://wa.me/+5511934282440" target="_blank" class="mx-2 text-reset">
+            <i class="fab fa-whatsapp fa-lg"></i>
           </a>
-          <a href="" class="mx-2 text-reset">
-            <i class="fab fa-linkedin fa-lg"></i>
-          </a>
-          <a href="" class="mx-2 text-reset">
-            <i class="fab fa-github fa-lg"></i>
-          </a>
-          <a href="" class="mx-2 text-reset">
+          <a href="mailto:fernandokojiyama@gmail.com" target="_blank" class="mx-2 text-reset">
             <i class="fas fa-envelope fa-lg"></i>
           </a>
-          <a href="" class="mx-2 text-reset">
-            <i class="fab fa-whatsapp fa-lg"></i>
+          <a href="https://github.com/Kojji" target="_blank" class="mx-2 text-reset">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="https://www.instagram.com/nandokoji/" target="_blank" class="mx-2 text-reset">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fernando-koji-yamashiro-56a122220/" target="_blank" class="mx-2 text-reset">
+            <i class="fab fa-linkedin fa-lg"></i>
           </a>
 
         </div>
