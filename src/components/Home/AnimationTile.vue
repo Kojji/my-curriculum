@@ -1,6 +1,6 @@
 <template>
-  <div class="animation-tile container my-4">
-    <div class="strip"></div>
+  <div ref="animation" class="animation-tile container my-4">
+    <div :style="'height: ' + animationWidth + 'px'"  class="strip"></div>
     <div class="strip layer-2"></div>
     <div class="strip layer-3"></div>
     <!-- <div class="strip"></div>
@@ -11,7 +11,26 @@
 
 <script>
 export default {
-  name: 'Animation'
+  name: 'Animation',
+  data() {
+    return {
+      animationWidth: 0
+    }
+  },
+  methods: {
+    handleResize () {
+      if (this.$refs.animation) {
+        this.animationWidth = this.$refs.animation.clientWidth/3
+      }
+    }
+  },
+  mounted() {
+    this.animationWidth = this.$refs.animation.clientWidth/3
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  },
 }
 </script>
 
@@ -49,7 +68,8 @@ export default {
 }
 
 .animation-tile{
-  height: 50vh;
+  height: auto;
+  /* padding-bottom: 35%; */
   /* background-color: var(--accent-color); */
   display: grid;
   grid-template-columns: 1fr;
