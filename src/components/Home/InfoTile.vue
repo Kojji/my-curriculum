@@ -54,21 +54,31 @@ export default {
 
 <style scoped>
 
-/* @media (max-width: 575.98px) {
-  .link{font-size: 10px;}
-} */
+@media (max-width: 575.98px) {
+  .item{
+    padding: 1px 4px;
+    margin: 3px 2px;
+  }
+  .item a{
+    font-size: 10px;
+  }
+  .item:hover{
+    padding: 4px 4px;
+    margin: 0px 2px;
+  }
+}
 
 @media (max-width: 767.98px) {
   .item{
-    padding: 5px 10px;
-    margin: 5px 4px;
+    padding: 3px 7px;
+    margin: 3px 2px;
   }
   .item a{
     font-size: 13px;
   }
   .item:hover{
-    padding: 10px 10px;
-    margin: 0px 4px;
+    padding: 6px 7px;
+    margin: 0px 2px;
   }
 }
 

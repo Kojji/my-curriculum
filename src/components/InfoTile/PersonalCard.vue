@@ -28,13 +28,28 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 767.98px) {
+  .photo-slot{
+    width: 22%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+  .photo-slot{
+    width: 17%;
+  }
+}
+@media (min-width: 992px) {
+  .photo-slot{
+    width: 12%;
+  }
+}
+
 .about-me-text p{
   text-align: justify;
   text-justify: inter-word;
 }
 
 .photo-slot{
-  width: 15%;
   border-radius: 50%;
   background: red;
 }
