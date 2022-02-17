@@ -3,7 +3,7 @@
     <footer class="text-center text-lg-start text-muted fixed-bottom" style="background-color: var(--light-color);">
       <!-- Section: Social media -->
       <section
-        class="d-flex justify-content-center p-4 border-bottom"
+        class="d-flex justify-content-center p-2 border-bottom"
       >
         <div style="font-size: 1.2rem;color: var(--accent-color);">
           <a href="https://wa.me/+5511934282440" target="_blank" class="mx-2 text-reset">

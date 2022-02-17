@@ -1,10 +1,18 @@
 <template>
   <div ref="animation" class="animation-tile container my-4">
+    <div class="main-photo-slot">
+      <img :src="photo" class="photo-slot" alt="...">
+      <div>
+        <p class="role-text text-size-1">Fernando Koji Yamashiro</p>
+        <p class="role-text text-size-2">Desenvolvedor Web Junior</p>
+      </div>
+    </div>
     <div :style="'height: ' + animationWidth/4 + 'px'"  class="strip"></div>
-    <div class="strip layer-2"></div>
-    <div class="strip layer-3"></div>
-    <div class="strip layer-4"></div>
-    <div class="strip layer-5"></div>
+    <div class="strip strip-layer-1"></div>
+    <div class="strip strip-layer-2"></div>
+    <div class="strip strip-layer-3"></div>
+    <div class="strip strip-layer-4"></div>
+    <div class="strip strip-layer-5"></div>
     <!-- <div class="strip"></div> -->
   </div>
 </template>
@@ -14,7 +22,8 @@ export default {
   name: 'Animation',
   data() {
     return {
-      animationWidth: 0
+      animationWidth: 0,
+      photo: require("@/assets/logo.png")
     }
   },
   methods: {
@@ -35,6 +44,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 @keyframes slide {
   0% {
     transform:translateX(-50%);
@@ -44,35 +55,25 @@ export default {
   }
 }
 
-.strip {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgba(68, 197, 230, 0.5) 50%, rgba(79, 94, 114, 0) 50%);
-  grid-row-start: 1;
-  grid-column-start: 1;
-  height: 100%;
-  width: 250%;
-  z-index:-1;
+/* @media (max-width: 511.98px) {
+  .photo-slot{
+    width: 20%;
+  }
 }
-
-.layer-2 {
-  /* animation-direction:alternate-reverse; */
-  animation-duration:4s;
-  background-image: linear-gradient(240deg, rgba(206, 77, 67, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
+@media (min-width: 512px) and (max-width: 767.98px) {
+  .photo-slot{
+    width: 16%;
+  }
+} */
+@media(max-width: 991.98px){
+  .photo-slot{
+    width: 16%;
+  }
 }
-
-.layer-3 {
-  animation-duration:4.5s;
-  background-image: linear-gradient(-60deg, rgba(69, 178, 197, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
-}
-
-.layer-4 {
-  animation-duration:2.5s;
-  background-image: linear-gradient(240deg, rgba(207, 73, 185, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
-}
-
-.layer-5 {
-  animation-duration:3.5s;
-  background-image: linear-gradient(240deg, rgba(211, 209, 209, 0.3) 50%, rgba(79, 94, 114, 0) 50%) !important;
+@media (min-width: 992px) {
+  .photo-slot{
+    width: 12%;
+  }
 }
 
 .animation-tile{
@@ -81,7 +82,68 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   overflow: hidden;
+  align-items: center;
 }
 
+.strip {
+  animation:slide 3s ease-in-out infinite alternate;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  height: 100%;
+  width: 250%;
+  z-index:-1;
+}
+
+.strip-layer-1 {
+  animation-duration:3s;
+  background-image: linear-gradient(-60deg, rgba(68, 197, 230, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
+}
+
+.strip-layer-2 {
+  /* animation-direction:alternate-reverse; */
+  animation-duration:4s;
+  background-image: linear-gradient(240deg, rgba(206, 77, 67, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
+}
+
+.strip-layer-3 {
+  animation-duration:4.5s;
+  background-image: linear-gradient(-60deg, rgba(69, 178, 197, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
+}
+
+.strip-layer-4 {
+  animation-duration:3.5s;
+  background-image: linear-gradient(240deg, rgba(207, 73, 185, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
+}
+
+.strip-layer-5 {
+  animation-duration:2.5s;
+  background-image: linear-gradient(240deg, rgba(211, 209, 209, 0.3) 50%, rgba(79, 94, 114, 0) 50%) !important;
+}
+
+.text-size-1{
+  font-size: 28px;
+}
+
+.text-size-2{
+  font-size: 24px;
+}
+
+.main-photo-slot{
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.photo-slot{
+  border-radius: 50%;
+  background: red;
+}
+
+.role-text{
+  /* font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif; */
+  font-family: 'Redressed', cursive;
+  text-shadow: 0px 0px 3px rgb(255, 255, 255), 0 0 1em rgba(8, 182, 60, 0.8);
+  font-weight: bold;
+  margin-bottom: 0;
+}
 
 </style>
