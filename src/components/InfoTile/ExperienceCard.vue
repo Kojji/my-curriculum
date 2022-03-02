@@ -1,15 +1,15 @@
 <template>
   <div class="container">
     <div class="accordion" id="experience-accordion">
-      <h2>Programming</h2>
+      <h3>{{$t('InfoCards.Experience.SectionOne')}}</h3>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             {{$t('InfoCards.Experience.TitleFirst')}}
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#experience-accordion">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experience-accordion">
+          <div class="accordion-body">{{$t('InfoCards.Experience.TextFirst')}}</div>
         </div>
       </div>
       <div class="accordion-item">
@@ -19,21 +19,21 @@
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#experience-accordion">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          <div class="accordion-body">{{$t('InfoCards.Experience.TextSecond')}}</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
             {{$t('InfoCards.Experience.TitleThird')}}
           </button>
         </h2>
-        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#experience-accordion">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#experience-accordion">
+          <div class="accordion-body">{{$t('InfoCards.Experience.TextThird')}}</div>
         </div>
       </div>
 
-      <h2>Other Projects</h2>
+      <h3>{{$t('InfoCards.Experience.SectionTwo')}}</h3>
       <div style="border-top: 0px;">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
@@ -42,7 +42,7 @@
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextFourth')}}</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -52,7 +52,7 @@
             </button>
           </h2>
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextFifth')}}</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -62,7 +62,7 @@
             </button>
           </h2>
           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextSixth')}}</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -72,7 +72,7 @@
             </button>
           </h2>
           <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextSeventh')}}</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -82,7 +82,7 @@
             </button>
           </h2>
           <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextEigth')}}</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -92,12 +92,12 @@
             </button>
           </h2>
           <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextNineth')}}</div>
           </div>
         </div>
       </div>
 
-      <h2>Misc</h2>
+      <h3>{{$t('InfoCards.Experience.SectionThree')}}</h3>
       <div style="border-top: 0px;">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTen">
@@ -106,7 +106,7 @@
             </button>
           </h2>
           <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextTenth')}}</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -116,7 +116,7 @@
             </button>
           </h2>
           <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#experience-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            <div class="accordion-body">{{$t('InfoCards.Experience.TextEleventh')}}</div>
           </div>
         </div>
       </div>
@@ -131,6 +131,11 @@ export default {
 </script>
 
 <style scoped>
+.accordion-body{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .accordion-button:not(.collapsed){
   background-color: var(--secondary-color);
   color: var(--light-color);

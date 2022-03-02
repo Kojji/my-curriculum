@@ -83,6 +83,7 @@ export default {
   grid-template-columns: 1fr;
   overflow: hidden;
   align-items: center;
+  background: rgba(177, 110, 223, 0.3);
 }
 
 .strip {
@@ -96,13 +97,13 @@ export default {
 
 .strip-layer-1 {
   animation-duration:3s;
-  background-image: linear-gradient(-60deg, rgba(68, 197, 230, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
+  background-image: linear-gradient(-60deg, rgba(57, 170, 199, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
 }
 
 .strip-layer-2 {
   /* animation-direction:alternate-reverse; */
   animation-duration:4s;
-  background-image: linear-gradient(240deg, rgba(206, 77, 67, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
+  background-image: linear-gradient(240deg, rgba(228, 67, 56, 0.5) 50%, rgba(79, 94, 114, 0) 50%) !important;
 }
 
 .strip-layer-3 {
@@ -117,7 +118,7 @@ export default {
 
 .strip-layer-5 {
   animation-duration:2.5s;
-  background-image: linear-gradient(240deg, rgba(211, 209, 209, 0.3) 50%, rgba(79, 94, 114, 0) 50%) !important;
+  background-image: linear-gradient(240deg, rgba(128, 128, 128, 0.3) 50%, rgba(79, 94, 114, 0) 50%) !important;
 }
 
 .text-size-1{
@@ -141,8 +142,9 @@ export default {
 .role-text{
   /* font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif; */
   font-family: 'Redressed', cursive;
-  text-shadow: 0px 0px 3px rgb(255, 255, 255), 0 0 1em rgba(8, 182, 60, 0.8);
+  text-shadow: 0px 0px 3px rgb(32, 32, 32), 0 0 1em rgba(4, 100, 33, 0.8);
   font-weight: bold;
+  color: white;
   margin-bottom: 0;
 }
 

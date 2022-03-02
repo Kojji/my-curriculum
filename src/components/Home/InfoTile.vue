@@ -66,6 +66,10 @@ export default {
     padding: 4px 4px;
     margin: 0px 2px;
   }
+  .selected{
+    padding: 4px 4px !important;
+    margin: 0px 2px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -79,6 +83,10 @@ export default {
   .item:hover{
     padding: 6px 7px;
     margin: 0px 2px;
+  }
+  .selected{
+    padding: 6px 7px !important;
+    margin: 0px 2px !important;
   }
 }
 
