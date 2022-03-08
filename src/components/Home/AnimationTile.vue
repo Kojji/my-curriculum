@@ -1,13 +1,13 @@
 <template>
   <div ref="animation" class="animation-tile container my-4">
     <div class="main-photo-slot">
-      <img :src="photo" class="photo-slot" alt="...">
+      <!-- <img :src="photo" class="photo-slot" alt="..."> -->
       <div>
         <p class="role-text text-size-1">Fernando Koji Yamashiro</p>
         <p class="role-text text-size-2">Desenvolvedor Web Junior</p>
       </div>
     </div>
-    <div :style="'height: ' + animationWidth/4 + 'px'"  class="strip"></div>
+    <div :style="'height: ' + animationWidth + 'px'"  class="strip"></div>
     <div class="strip strip-layer-1"></div>
     <div class="strip strip-layer-2"></div>
     <div class="strip strip-layer-3"></div>
@@ -23,18 +23,18 @@ export default {
   data() {
     return {
       animationWidth: 0,
-      photo: require("@/assets/logo.png")
+      // photo: require("@/assets/logo.png")
     }
   },
   methods: {
     handleResize () {
       if (this.$refs.animation) {
-        this.animationWidth = this.$refs.animation.clientWidth
+        this.animationWidth = this.$refs.animation.clientWidth > 511.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
       }
     }
   },
   mounted() {
-    this.animationWidth = this.$refs.animation.clientWidth
+    this.animationWidth = this.$refs.animation.clientWidth > 511.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
     window.addEventListener('resize', this.handleResize)
   },
   beforeUnmount() {
@@ -65,7 +65,7 @@ export default {
     width: 16%;
   }
 } */
-@media(max-width: 991.98px){
+/* @media(max-width: 991.98px){
   .photo-slot{
     width: 16%;
   }
@@ -74,7 +74,7 @@ export default {
   .photo-slot{
     width: 12%;
   }
-}
+} */
 
 .animation-tile{
   height: auto;
@@ -134,10 +134,10 @@ export default {
   grid-column-start: 1;
 }
 
-.photo-slot{
+/* .photo-slot{
   border-radius: 50%;
   background: red;
-}
+} */
 
 .role-text{
   /* font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif; */

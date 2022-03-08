@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="personal-card">
     <h1>{{$t('InfoCards.Personal.TitleFirst')}}</h1>
-    <!-- <img :src="photo" class="photo-slot my-3" alt="..."> -->
+    <img :src="photo" class="photo-slot my-3" alt="...">
     <div class="about-me-text">
       <p>
         {{$t('InfoCards.Personal.ParagraphFirst')}}
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-/* @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .photo-slot{
     width: 22%;
   }
@@ -42,17 +42,17 @@ export default {
   .photo-slot{
     width: 12%;
   }
-} */
+}
 
 .about-me-text p{
   text-align: justify;
   text-justify: inter-word;
 }
 
-/* .photo-slot{
+.photo-slot{
   border-radius: 50%;
   background: red;
-} */
+}
 
 #personal-card{
   margin-bottom: var(--bottom-margin);

@@ -3,7 +3,7 @@
     <nav class="navbar navbar-light" style="background-color: var(--light-color);">
       <div class="container-fluid">
         <a class="navbar-brand portfolio-title">Fernando Koji Yamashiro</a>
-        <!-- <div class="dropdown btn-group">
+        <div class="dropdown btn-group">
           <button class="btn btn-sm dropdown-toggle text-light" style="background-color: var(--accent-color);" type="button" id="dropdownFlag" data-bs-toggle="dropdown" aria-expanded="false">
             {{language}}
           </button>
@@ -11,7 +11,7 @@
             <li><a class="dropdown-item" @click="changeLocale('pt'), language = 'Português'">Português</a></li>
             <li><a class="dropdown-item" @click="changeLocale('en'), language = 'English'">English</a></li>
           </ul>
-        </div> -->
+        </div>
       </div>
     </nav>
   </div>
