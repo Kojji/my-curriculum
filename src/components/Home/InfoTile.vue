@@ -60,7 +60,7 @@ export default {
     margin: 3px 2px;
   }
   .item a{
-    font-size: 10px;
+    font-size: 11px;
   }
   .item:hover{
     padding: 4px 4px;
@@ -72,7 +72,7 @@ export default {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .item{
     padding: 3px 7px;
     margin: 3px 2px;
