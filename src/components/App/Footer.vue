@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <footer class="text-center text-lg-start text-muted fixed-bottom" style="background-color: var(--light-color);">
+    <footer class="text-center text-lg-start text-muted fixed-bottom" style="background-color: var(--opacity-light);">
       <!-- Section: Social media -->
       <section
         class="d-flex justify-content-center p-2 border-bottom"

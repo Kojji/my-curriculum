@@ -1,6 +1,7 @@
 <template>
-  <div ref="animation" class="animation-tile container my-4" :style="'height: ' + animationWidth + 'px'"> 
+  <div ref="animation" class="animation-tile container mb-4" :style="'height: ' + animationWidth + 'px'"> 
     <div class="animation-container" >
+      <div class="layer circle-background" :style="'height: ' + animationWidth/1.4 + 'px; width: ' + animationWidth/1.4 + 'px;'"></div>
       <div class="layer"><img alt="music-background" class="musical-notes musical-background" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1Nt56CbxsyG-jig3ayLQdc7vFDDI_TNP2" /></div>
       <div class="layer"><img alt="octopus-head" class="head-motion" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OKcDctpCwvTGVlrvJDq582jDaJbSnBE3" /></div>
       <div class="layer"><img alt="octopus-partial-leg-4" class="tentacle-press-4" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1O25Z84HJ1LpqWgk4PisVEV4fMsd8Bg1h" /></div>
@@ -210,6 +211,16 @@ export default {
 }
 
 @media (max-width: 575.98px) {
+  .animation-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .layer{
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
   .text-size-1{
     font-size: 1.5rem;
   }
@@ -220,6 +231,16 @@ export default {
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
+  .animation-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .layer{
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
   .text-size-1{
     font-size: 2rem;
   }
@@ -230,6 +251,16 @@ export default {
 }
 
 @media (min-width: 992px) {
+  .animation-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .layer{
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+  
   .text-size-1{
     font-size: 3rem;
   }
@@ -241,20 +272,25 @@ export default {
 
 .animation-tile{
   /* padding-bottom: 35%; */
-  background: rgba(200, 152, 231, 0.432);
+  /* background: rgba(200, 152, 231, 0.432); */
 }
 
 .animation-container{
-  display: grid;
-  grid-template-columns: 1fr;
   overflow: hidden;
   align-items: center;
 }
 
+.circle-background{
+  background-color: #b2b9ed;
+  border-radius: 50%;
+  margin: auto !important; 
+}
+
 .layer{
-  grid-row-start: 1;
-  grid-column-start: 1;
   z-index:2;
+  margin-left: 15px;
+  /* align-self: flex-end;
+  margin-right: 5%; */
 }
 
 .background{

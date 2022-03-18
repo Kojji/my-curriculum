@@ -30,9 +30,10 @@ export default {
 
 :root{
   --light-color: #ecf2f7;
-  --primary-color: #9ab8c9;
-  --secondary-color: #6490ac;
-  --accent-color: #385E72;
+  --opacity-light: rgba(207, 190, 233, 0.8);
+  --primary-color: #ae8dd8;
+  --secondary-color: #618cc4;
+  --accent-color: #204153;
   --bottom-margin: 25px;
 }
 </style>

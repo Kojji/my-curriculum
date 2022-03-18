@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
-    <nav class="navbar navbar-light" style="background-color: var(--light-color);">
+    <nav class="navbar navbar-light" style="background-color: var(--opacity-light);">
       <div class="container-fluid">
-        <a class="navbar-brand portfolio-title">Fernando Koji Yamashiro</a>
+        <span class="navbar-brand portfolio-title">Fernando Koji Yamashiro</span>
         <div class="dropdown btn-group">
           <button class="btn btn-sm dropdown-toggle text-light" style="background-color: var(--accent-color);" type="button" id="dropdownFlag" data-bs-toggle="dropdown" aria-expanded="false">
             {{language}}
@@ -37,7 +37,13 @@ export default {
 <style scoped>
 .navbar {padding: 2px !important}
 
+
 .portfolio-title{
-  font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif;
+  /* font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif; */
+  color: var(--accent-color) !important;
+  font-family: 'Redressed', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
 }
 </style>
