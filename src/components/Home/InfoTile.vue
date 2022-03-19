@@ -1,22 +1,25 @@
 <template>
   <div>
-    <div class="glass menu">
+    <div class="container">
       <!-- <div class="glass-window"> -->
-      <div class="flex">
-        <div class="nav justify-content-center horizontal-menu">
-          <div :class="horizontalMenuState == 'Personal'? 'item selected' : 'item'" id="Personal" @click="horizontalMenuState = 'Personal'">
+      <div class="row">
+        <!-- <div class="justify-content-center horizontal-menu"> -->
+          <div :class="horizontalMenuState == 'Personal'? 'col item selected' : 'col item'" id="Personal" @click="horizontalMenuState = 'Personal'">
             <a>{{$t('HorizontalMenu.PersonalItem')}}</a>
           </div>
-          <div :class="horizontalMenuState == 'Experience'? 'item selected' : 'item'" id="Experience" @click="horizontalMenuState = 'Experience'">
+          <div :class="horizontalMenuState == 'Experience'? 'col item selected' : 'col item'" id="Experience" @click="horizontalMenuState = 'Experience'">
             <a>{{$t('HorizontalMenu.ExperienceItem')}}</a>
           </div>
-          <div :class="horizontalMenuState == 'Skill'? 'item selected' : 'item'" id="Skills" @click="horizontalMenuState = 'Skill'">
+          <div :class="horizontalMenuState == 'Skill'? 'col item selected' : 'col item'" id="Skills" @click="horizontalMenuState = 'Skill'">
             <a>{{$t('HorizontalMenu.SkillItem')}}</a>
           </div>
-          <div :class="horizontalMenuState == 'Education'? 'item selected' : 'item'" id="Education" @click="horizontalMenuState = 'Education'">
+          <div :class="horizontalMenuState == 'Education'? 'col item selected' : 'col item'" id="Education" @click="horizontalMenuState = 'Education'">
             <a>{{$t('HorizontalMenu.EducationItem')}}</a>
           </div>
-        </div>
+          <div :class="horizontalMenuState == 'Education'? 'col item selected' : 'col item'" id="Education" @click="horizontalMenuState = 'Education'">
+            <a>{{$t('HorizontalMenu.AnimationItem')}}</a>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
     <div class="information">
@@ -55,10 +58,6 @@ export default {
 <style scoped>
 
 @media (max-width: 575.98px) {
-  .item{
-    padding: 1px 4px;
-    margin: 3px 2px;
-  }
   .item a{
     font-size: 11px;
   }
@@ -68,15 +67,10 @@ export default {
   }
   .selected{
     padding: 4px 4px !important;
-    margin: 0px 2px !important;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .item{
-    padding: 3px 7px;
-    margin: 3px 2px;
-  }
   .item a{
     font-size: 13px;
   }
@@ -86,7 +80,6 @@ export default {
   }
   .selected{
     padding: 6px 7px !important;
-    margin: 0px 2px !important;
   }
 }
 
@@ -108,8 +101,7 @@ export default {
 
 .item{
   transition: all .3s;
-  padding: 10px 15px;
-  margin: 5px 4px;
+  padding: 15px 0;
   border-style: solid;
   cursor: pointer;
   border-width: 1px;
@@ -120,8 +112,7 @@ export default {
 }
 
 .item:hover{
-  margin: 0px 4px;
-  padding: 15px 15px;
+  /* padding: 20px 0; */
   background-color: var(--primary-color);
   color: black !important;
 }
@@ -131,8 +122,7 @@ export default {
 }
 
 .selected{
-  padding: 15px 15px !important;
-  margin: 0px 4px !important;
+  padding: 15px 0;
   background-color: var(--accent-color);
   border-color: var(--light-color);
   color: var(--light-color);

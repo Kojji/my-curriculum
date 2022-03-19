@@ -4,7 +4,8 @@ export default {
       EducationItem: "Education",
       ExperienceItem: "Experience",
       PersonalItem: "About Me",
-      SkillItem: "Skills"
+      SkillItem: "Skills",
+      AnimationItem: "Animations"
     },
     InfoCards: {
       Education: {
@@ -63,7 +64,8 @@ export default {
       EducationItem: "Formacão",
       ExperienceItem: "Experiência",
       PersonalItem: "Sobre Mim",
-      SkillItem: "Habilidades"
+      SkillItem: "Habilidades",
+      AnimationItem: "Animações"
     },
     InfoCards: {
       Education: {

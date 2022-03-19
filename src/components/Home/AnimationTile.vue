@@ -1,51 +1,57 @@
 <template>
-  <div ref="animation" class="animation-tile container mb-4" :style="'height: ' + animationWidth + 'px'"> 
-    <div class="animation-container" >
-      <div class="layer circle-background" :style="'height: ' + animationWidth/1.4 + 'px; width: ' + animationWidth/1.4 + 'px;'"></div>
-      <div class="layer"><img alt="music-background" class="musical-notes musical-background" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1Nt56CbxsyG-jig3ayLQdc7vFDDI_TNP2" /></div>
-      <div class="layer"><img alt="octopus-head" class="head-motion" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OKcDctpCwvTGVlrvJDq582jDaJbSnBE3" /></div>
-      <div class="layer"><img alt="octopus-partial-leg-4" class="tentacle-press-4" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1O25Z84HJ1LpqWgk4PisVEV4fMsd8Bg1h" /></div>
-      <div class="layer"><img alt="octopus-partial-leg-3" class="tentacle-press-3" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1O3h_o655jfgGbu86ClrkHoOIgGymqGfR" /></div>
-      <div class="layer"><img alt="octopus-partial-leg-2" class="tentacle-press-2" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1O6emzQQX90cE0WrQ4u47hF-PXOb41_TI" /></div>
-      <div class="layer"><img alt="octopus-partial-leg-1" class="tentacle-press-1" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1O9dTrLMVRbMVnbMa_JsX0-C8iV8Uz-jq" /></div>
-      <div class="layer"><img alt="octopus-hat" class="hat-motion" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OIV7xOqjsbxGpeVGVmzMAJNcBb4Tynny" /></div>
-      <div class="layer"><img alt="octopus-bottom-leg-3" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1NxzGRzMYkRjvQHvHImDB8QyaE57bhUeN" /></div>
-      <div class="layer"><img alt="octopus-bottom-leg-2" class="tentacle-tap" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1NzyhZpvEnG_s_85piwCvkU6yHJCQ320t" /></div>
-      <div class="layer"><img alt="octopus-bottom-leg-1" class="" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1Nw3mgB_es5cTmM1nHG3cEDAji7F5FQmi" /></div>
-      <div class="layer"><img alt="octopus-keyboard" class="" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1NlwuNkQQ2TmQJu4ZJQHGzo5JgAmUf7r2" /></div>
-      <div class="layer"><img alt="octopus-upper-leg-4" class="tentacle-press-4" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OBSHX5NYqE8UGpDUXNhdv9WgxrEVQvr5" /></div>
-      <div class="layer"><img alt="octopus-upper-leg-3" class="tentacle-press-3" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OBcOfkBgqtpSy2Zy1joNhswkU4zysQLt" /></div>
-      <div class="layer"><img alt="octopus-upper-leg-2" class="tentacle-press-2" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OHBZs_Lw2mJjVKD4mVTyDlS_uXl1Tvfh" /></div>
-      <div class="layer"><img alt="octopus-upper-leg-1" class="tentacle-press-1" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OHRL4EOHgYi_UVOoJwdURUYaZw1vH9Rq" /></div>
-      <div class="layer"><img alt="octopus-musical-notes" class="musical-notes" :style="'height: ' + animationWidth + 'px'" src="https://drive.google.com/uc?export=view&id=1OJ686fSOP8KdXtB99vkgmknfDeqgq52b" /></div>
-      <div class="main-text-slot">
-        <div>
-          <p class="role-text text-size-1">Fernando Koji Yamashiro</p>
-          <p class="role-text text-size-2">Desenvolvedor Web Junior</p>
+  <div ref="animation" class="animation-tile container mb-4" :style="'height: ' + animationHeight + 'px'">
+    <div class="row">
+      <div v-if="windowWidth > 767.98" class="col">
+        <div class="info-grid">
+          <div class="title">
+            Titulo
+            <!-- <div class="main-text-slot">
+              <div>
+                <p class="role-text text-size-1">Fernando Koji Yamashiro</p>
+                <p class="role-text text-size-2">Desenvolvedor Web Junior</p>
+              </div>
+            </div> -->
+          </div>
+          <div class="subtitle">
+            Texto
+          </div>
+          <div class="call-to-action">
+            Botão
+          </div>
         </div>
+      </div>
+      <div class="col">
+        <Animation :tileHeight="animationHeight" :windowWidth="windowWidth" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Animation from '@/components/AnimationTile/Animation.vue'
 export default {
-  name: 'Animation',
+  name: 'AnimationTile',
   data() {
     return {
-      animationWidth: 0,
+      animationHeight: 0,
+      windowWidth: 0
       // photo: require("@/assets/logo.png")
     }
+  },
+  components: {
+    Animation
   },
   methods: {
     handleResize () {
       if (this.$refs.animation) {
-        this.animationWidth = this.$refs.animation.clientWidth > 575.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
+        this.animationHeight = this.$refs.animation.clientWidth > 575.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
       }
+      this.windowWidth = window.innerWidth
     }
   },
   mounted() {
-    this.animationWidth = this.$refs.animation.clientWidth > 575.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
+    this.animationHeight = this.$refs.animation.clientWidth > 575.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
+    this.windowWidth = window.innerWidth
     window.addEventListener('resize', this.handleResize)
   },
   beforeUnmount() {
@@ -55,192 +61,8 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-
-@keyframes color-change {
-  0% {
-    background: #e6edb2;
-  }
-  25%{
-    background: #b2edb9;
-  }
-  50%{
-    background: #b2eded;
-  }
-  75%{
-    background: #b2b9ed;
-  }
-  100% {
-    background: #e6edb2;
-  }
-}
-
-@keyframes foot-tap {
-  0%{
-    transform: translate(0.5%,-1%);
-  }
-  100%{
-    transform: translate(0,1%);
-  }
-}
-
-@keyframes hat-motion {
-  0%{
-    transform: scale(105%, 105%) translate(-2%,-2%);
-  }
-  50%{
-    transform: scale(101%, 101%) translate(0,-1%);
-  }
-  100%{
-    transform: scale(105%, 105%) translate(2%,-2%);
-  }
-}
-
-@keyframes head-motion {
-  0%{
-    transform: scale(105%, 105%) translate(-2%,-2%);
-  }
-  50%{
-    transform: scale(101%, 101%) translate(0%,0%);
-  }
-  100%{
-    transform: scale(105%, 105%) translate(2%,-2%);
-  }
-}
-
-@keyframes musical-notes {
-  0%{
-    transform: scale(105%, 105%) translate(-2%,-3%);
-  }
-  50%{
-    transform: translate(0%,0%) scale(100%, 100%);
-  }
-  100%{
-    transform: scale(105%, 105%) translate(2%,-3%);
-  }
-}
-
-@keyframes tentacle-press-1 {
-  0%{
-    transform: translate(0,-3%);
-  }
-  12.5%{
-    transform: translate(-2%,0.5%);
-  }
-  25%{
-    transform: translate(-2%,-3%);
-  }
-  37.5%{
-    transform: translate(-1.5%,0%);
-  }
-  50%{
-    transform: translate(-1%,-2%);
-  }
-  62.5%{
-    transform: translate(0%,0%);
-  }
-  75%{
-    transform: translate(0%,-1%);
-  }
-  87.5%{
-    transform: translate(1%,0%);
-  }
-  100%{
-    transform: translate(0,-3%);
-  }
-}
-
-@keyframes tentacle-press-2 {
-  0%{
-    transform: translate(1%,0%);
-  }
-  25%{
-    transform: translate(0,-2%);
-  }
-  50%{
-    transform: translate(-2%,0%);
-  }
-  75%{
-    transform: translate(1%,-2%);
-  }
-  100%{
-    transform: translate(1%,0%);
-  }
-}
-
-@keyframes tentacle-press-3 {
-  0%{
-    transform: translate(-0.5%,0%);
-  }
-  16.67%{
-    transform: translate(0,-1%);
-  }
-  33.33%{
-    transform: translate(-1%,0%);
-  }
-  50%{
-    transform: translate(1%,-2%);
-  }
-  66.67%{
-    transform: translate(3.5%,0%);
-  }
-  83.33%{
-    transform: translate(2%,-2.5%);
-  }
-  100%{
-    transform: translate(-0.5%,0%);
-  }
-}
-
-@keyframes tentacle-press-4 {
-  0%{
-    transform: translate(0,-2%);
-  }
-  25%{
-    transform: translate(1%,0%);
-  }
-  50%{
-    transform: translate(0%,-3%);
-  }
-  75%{
-    transform: translate(-2%,0%);
-  }
-  100%{
-    transform: translate(0,-2%);
-  }
-}
-
-@media (max-width: 575.98px) {
-  .animation-container{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .layer{
-    grid-row-start: 1;
-    grid-column-start: 1;
-  }
-
-  .text-size-1{
-    font-size: 1.5rem;
-  }
-
-  .text-size-2{
-    font-size: 1.25rem;
-  }
-}
 
 @media (min-width: 576px) and (max-width: 991.98px) {
-  .animation-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .layer{
-    grid-row-start: 1;
-    grid-column-start: 2;
-  }
-
   .text-size-1{
     font-size: 2rem;
   }
@@ -251,16 +73,6 @@ export default {
 }
 
 @media (min-width: 992px) {
-  .animation-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .layer{
-    grid-row-start: 1;
-    grid-column-start: 2;
-  }
-  
   .text-size-1{
     font-size: 3rem;
   }
@@ -270,81 +82,23 @@ export default {
   }
 }
 
-.animation-tile{
-  /* padding-bottom: 35%; */
-  /* background: rgba(200, 152, 231, 0.432); */
+
+.info-grid{
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
-.animation-container{
-  overflow: hidden;
-  align-items: center;
-}
-
-.circle-background{
-  background-color: #b2b9ed;
-  border-radius: 50%;
-  margin: auto !important; 
-}
-
-.layer{
-  z-index:2;
-  margin-left: 15px;
-  /* align-self: flex-end;
-  margin-right: 5%; */
-}
-
-.background{
-  animation: color-change 4s ease-in-out infinite;
-}
-
-.hat-motion{
-  animation: hat-motion 0.6s ease-in-out infinite alternate;
-}
-
-.head-motion{
-  animation: head-motion 0.6s ease-in-out infinite alternate;
-}
-
-.musical-notes{
-  animation: musical-notes 0.8s ease-in-out infinite alternate;
-}
-
-.musical-background{
-  animation-delay: 0.3s
-}
-
-.tentacle-press-1{
-  animation: tentacle-press-1 2.4s linear infinite;
-}
-
-.tentacle-press-2{
-  animation: tentacle-press-2 1.2s linear infinite;
-}
-
-.tentacle-press-3{
-  animation: tentacle-press-3 1.8s linear infinite;
-}
-
-.tentacle-press-4{
-  animation: tentacle-press-4 1.2s linear infinite;
-}
-
-.tentacle-tap{
-  animation: foot-tap 0.3s ease-in-out infinite alternate;
-}
-
-.main-text-slot{
+.title{
   grid-row-start: 1;
-  grid-column-start: 1;
-  align-self: flex-end;
-  margin-left: auto;
-  z-index: 3;
 }
 
-/* .photo-slot{
-  border-radius: 50%;
-  background: red;
-} */
+.subtitle{
+  grid-row-start: 2;
+}
+
+.call-to-action{
+  grid-row-start: 3;
+}
 
 .role-text{
   /* font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif; */
