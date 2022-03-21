@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
-    <AnimationTile />
-    <InfoTile />
+    <AnimationTile :windowWidth="windowWidth"/>
+    <InfoTile :windowWidth="windowWidth" />
   </div>
 </template>
 
@@ -14,6 +14,23 @@ export default {
   components: {
     AnimationTile,
     InfoTile
-  }
+  },
+  data() {
+    return {
+      windowWidth: 0,
+    }
+  },
+  methods: {
+    handleResize () {
+      this.windowWidth = window.innerWidth
+    }
+  },
+  mounted() {
+    this.windowWidth = window.innerWidth
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  },
 }
 </script>

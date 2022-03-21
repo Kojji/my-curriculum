@@ -16,7 +16,7 @@
           <div :class="horizontalMenuState == 'Education'? 'col item selected' : 'col item'" id="Education" @click="horizontalMenuState = 'Education'">
             <a>{{$t('HorizontalMenu.EducationItem')}}</a>
           </div>
-          <div :class="horizontalMenuState == 'Education'? 'col item selected' : 'col item'" id="Education" @click="horizontalMenuState = 'Education'">
+          <div :class="horizontalMenuState == 'Animation'? 'col item selected' : 'col item'" id="Animation" @click="horizontalMenuState = 'Animation'">
             <a>{{$t('HorizontalMenu.AnimationItem')}}</a>
           </div>
         <!-- </div> -->
@@ -24,34 +24,43 @@
     </div>
     <div class="information">
       <EducationCard v-if="horizontalMenuState == 'Education'" />
-      <ExperienceCard v-if="horizontalMenuState == 'Experience'" />
+      <ExperienceCardSmaller v-if="horizontalMenuState == 'Experience' && windowWidth < 992" />
+      <ExperienceCardBigger v-if="horizontalMenuState == 'Experience' && windowWidth > 991.98" />
       <PersonalCard v-if="horizontalMenuState == 'Personal'" />
       <SkillCard v-if="horizontalMenuState == 'Skill'" />
+      <AnimationCard v-if="horizontalMenuState == 'Animation'" />
     </div>
   </div>
 </template>
 
 <script>
 import EducationCard from '@/components/InfoTile/EducationCard.vue'
-import ExperienceCard from '@/components/InfoTile/ExperienceCard.vue'
+import ExperienceCardSmaller from '@/components/InfoTile/ExperienceCardSmaller.vue'
+import ExperienceCardBigger from '@/components/InfoTile/ExperienceCardBigger.vue'
 import PersonalCard from '@/components/InfoTile/PersonalCard.vue'
 import SkillCard from '@/components/InfoTile/SkillCard.vue'
+import AnimationCard from '@/components/InfoTile/AnimationCard.vue'
 export default {
   name: 'InfoTile',
   components: {
+    AnimationCard,
     EducationCard,
-    ExperienceCard,
+    ExperienceCardSmaller,
+    ExperienceCardBigger,
     PersonalCard,
     SkillCard
   },
+  props: {
+    windowWidth: Number
+  },
   data() {
     return{
-      horizontalMenuState: "Personal"
+      horizontalMenuState: "Personal",
     }
   },
   mounted() {
     this.horizontalMenuState = "Personal"
-  }
+  },
 }
 </script>
 

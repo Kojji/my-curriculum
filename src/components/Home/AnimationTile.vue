@@ -3,20 +3,23 @@
     <div class="row">
       <div v-if="windowWidth > 767.98" class="col">
         <div class="info-grid">
-          <div class="title">
-            Titulo
-            <!-- <div class="main-text-slot">
-              <div>
+          <div class="title align-self-end row">
+            <div class="col-9 offset-2" style="background-color: red;">
+              <div class="main-text-slot">
                 <p class="role-text text-size-1">Fernando Koji Yamashiro</p>
                 <p class="role-text text-size-2">Desenvolvedor Web Junior</p>
               </div>
-            </div> -->
+            </div>
           </div>
-          <div class="subtitle">
-            Texto
+          <div class="subtitle row">
+            <div class="col-9 offset-2" style="background-color: red;">
+              Texto
+            </div>
           </div>
-          <div class="call-to-action">
-            Botão
+          <div class="call-to-action align-self-start row">
+            <div class="col-9 offset-2" style="background-color: red;">
+              Botão
+            </div>
           </div>
         </div>
       </div>
@@ -31,27 +34,28 @@
 import Animation from '@/components/AnimationTile/Animation.vue'
 export default {
   name: 'AnimationTile',
+  props: {
+    windowWidth: Number
+  },
   data() {
     return {
-      animationHeight: 0,
-      windowWidth: 0
-      // photo: require("@/assets/logo.png")
+      animationHeight: 0
     }
   },
   components: {
     Animation
+  },
+  computed: {
   },
   methods: {
     handleResize () {
       if (this.$refs.animation) {
         this.animationHeight = this.$refs.animation.clientWidth > 575.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
       }
-      this.windowWidth = window.innerWidth
     }
   },
   mounted() {
     this.animationHeight = this.$refs.animation.clientWidth > 575.98 ? this.$refs.animation.clientWidth/2 : this.$refs.animation.clientWidth
-    this.windowWidth = window.innerWidth
     window.addEventListener('resize', this.handleResize)
   },
   beforeUnmount() {
@@ -64,6 +68,16 @@ export default {
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .text-size-1{
+    font-size: 1.5rem;
+  }
+
+  .text-size-2{
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-size-1{
     font-size: 2rem;
   }
 
@@ -72,28 +86,23 @@ export default {
   }
 }
 
-@media (min-width: 992px) {
-  .text-size-1{
-    font-size: 3rem;
-  }
-
-  .text-size-2{
-    font-size: 2rem;
-  }
-}
-
 
 .info-grid{
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
+  height: 100%;
 }
 
 .title{
   grid-row-start: 1;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .subtitle{
   grid-row-start: 2;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .call-to-action{

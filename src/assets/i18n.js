@@ -18,6 +18,7 @@ export default {
         ItemTextOne: ""
       },
       Experience: {
+        PageTitle: "Previous Experience",
         SectionOne: "Programming Services",
         SectionTwo: "Outher Projects",
         SectionThree: "Miscellanious",
@@ -47,7 +48,7 @@ export default {
         TextEleventh: "",
       },
       Personal: {
-        TitleFirst: "About Me",
+        PageTitle: "About Me",
         ParagraphFirst: "Hi, I'm Fernando. Pleasure to have you here, I've recently graduated in Computer Engeneering. As an undergraduated, I've done some paid services as a web developer, which can be seen on the \"Experience\" tab, there are some other projects that i've developed as well. " + 
           "Spite the fact that I've acquired some work experience, there are so much more to learn and experience, mainly at this profession, which requires constant evolution. But I believe I've got enough potencial and persistence to surpass the challenges. ",
         ParagraphSecond: "There are so many things I enjoy doing besides programming, drawing is one of them, which is why I love css animations and screen design. Unfortunatelly, I still don't have the required skillset to develop what I envision. But one day I'll get there. " +
@@ -79,6 +80,7 @@ export default {
         ItemTextTwo: "No início de 2014, conclui o curso de técnico em eletrônica e ensino médio no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo (IFSP-SP). Como critérios de formação, realizei um estágio na Aureon, e desenvolvi, junto com outros acadêmicos, um sistema de trava eletrônica por senha como TCC.",
       },
       Experience: {
+        PageTitle: "Experiência Profissional",
         SectionOne: "Serviços de Programação",
         SectionTwo: "Outros Projetos de Programação",
         SectionThree: "Outros Serviços",
@@ -109,7 +111,7 @@ export default {
         TextEleventh: "Como critério de conclusão do meu curso Técnico em Eletronica, realizei um estágio na Aureon, empresa de comércio e fabricação de equipamentos de iluminação de emergência. O trabalho consistia em realizar a calibragem e manutenção dos equipamentos na linha de produção, que envolviam em sua totalidade em produtos eletrônicos analógicos.",
       },
       Personal: {
-        TitleFirst: "Sobre Mim",
+        PageTitle: "Sobre Mim",
         ParagraphFirst: "Olá, sou o Fernando. Prazer em ter você aqui. Recentemente, me formei em Engenharia de Computação, durante a graduação tive algumas atuações remuneradas como desenvolvedor web e desenvolvi alguns outros projetos, que podem ser vistos na aba \"Experiência\". " +
         "Apesar de já ter um pouco de experiência, reconheço que há muito espaço para crescimento já que ainda me falta conhecimento, ainda mais nessa área que demanda evolução constante, mas acredito ter o potêncial e a persistência necessária para o aprendizado.",
         ParagraphSecond: "Tenho diversos interesses além da programação, um deles é o desenho, e justamente por isso, que tenho um carinho especial por animações em css e design de telas. Porém ainda não tenho as habilidades necessárias para ser capaz de desenvolver plenamente o que visualizo. Mas acredito que um dia chegarei lá. " +

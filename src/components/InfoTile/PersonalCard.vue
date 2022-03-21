@@ -1,6 +1,6 @@
 <template>
-  <div class="container" id="personal-card">
-    <h1>{{$t('InfoCards.Personal.TitleFirst')}}</h1>
+  <div class="container pt-4" id="personal-card">
+    <h2>{{$t('InfoCards.Personal.PageTitle')}}</h2>
     <img :src="photo" class="photo-slot my-3" alt="...">
     <div class="about-me-text">
       <p>
