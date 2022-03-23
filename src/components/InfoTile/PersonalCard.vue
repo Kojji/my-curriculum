@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-4" id="personal-card">
-    <h2>{{$t('InfoCards.Personal.PageTitle')}}</h2>
-    <img :src="photo" class="photo-slot my-3" alt="...">
+    <h2 class="my-4">{{$t('InfoCards.Personal.PageTitle')}}</h2>
+    <img :src="photo" class="photo-slot mb-3" alt="...">
     <div class="about-me-text">
       <p>
         {{$t('InfoCards.Personal.ParagraphFirst')}}

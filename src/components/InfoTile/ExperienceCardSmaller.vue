@@ -1,6 +1,6 @@
 <template>
-  <div class="container pt-4">
-    <h2>{{$t('InfoCards.Experience.PageTitle')}}</h2>
+  <div class="container">
+    <h2 class="my-4">{{$t('InfoCards.Experience.PageTitle')}}</h2>
     <div class="accordion" id="experience-accordion">
       <h3>{{$t('InfoCards.Experience.SectionOne')}}</h3>
       <div class="accordion-item">

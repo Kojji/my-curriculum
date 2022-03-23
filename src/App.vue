@@ -29,10 +29,11 @@ export default {
 }
 
 :root{
-  --light-color: #ecf2f7;
+  --light-color: #f7ecf7;
   --opacity-light: rgba(207, 190, 233, 0.8);
-  --primary-color: #ae8dd8;
+  --primary-color: #8269c9;
   --secondary-color: #618cc4;
+  --opposite-color: #e9e8a3bb;
   --accent-color: #204153;
   --bottom-margin: 25px;
 }

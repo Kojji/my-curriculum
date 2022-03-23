@@ -17,7 +17,7 @@
     <div class="layer"><img alt="octopus-upper-leg-2" class="tentacle-press-2" :style="'height: ' + tileHeight + 'px'" src="https://drive.google.com/uc?export=view&id=1OHBZs_Lw2mJjVKD4mVTyDlS_uXl1Tvfh" /></div>
     <div class="layer"><img alt="octopus-upper-leg-1" class="tentacle-press-1" :style="'height: ' + tileHeight + 'px'" src="https://drive.google.com/uc?export=view&id=1OHRL4EOHgYi_UVOoJwdURUYaZw1vH9Rq" /></div>
     <div class="layer"><img alt="octopus-musical-notes" class="musical-notes" :style="'height: ' + tileHeight + 'px'" src="https://drive.google.com/uc?export=view&id=1OJ686fSOP8KdXtB99vkgmknfDeqgq52b" /></div>
-		<div class="main-text-slot" v-if="windowWidth < 768">
+		<div class="main-text-slot" v-if="windowWidth < 992">
 			<div>
 				<p class="role-text text-size-1">Fernando Koji Yamashiro</p>
 				<p class="role-text text-size-2">Desenvolvedor Web Junior</p>
@@ -284,18 +284,18 @@ export default {
 .role-text{
   /* font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif; */
   font-family: 'Redressed', cursive;
-  text-shadow: 0px 0px 3px rgb(32, 32, 32), 0 0 1em rgba(4, 100, 33, 0.8);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255), 0 0 0.5em rgba(10, 119, 45, 0.9);
   font-weight: bold;
-  color: white;
+  color: var(--accent-color);
   margin: 0;
 }
 
 .text-size-1{
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 
 .text-size-2{
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
 </style>

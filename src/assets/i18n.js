@@ -7,6 +7,11 @@ export default {
       SkillItem: "Skills",
       AnimationItem: "Animations"
     },
+    HomeBanner: {
+      CallToAction: "Contact Me",
+      Profession: "Junior Web Developer",
+      Text: "Hi, "
+    },
     InfoCards: {
       Education: {
         ItemTitleOne: "2022 - [Computer Engineer] UFGD",
@@ -67,6 +72,12 @@ export default {
       PersonalItem: "Sobre Mim",
       SkillItem: "Habilidades",
       AnimationItem: "Animações"
+    },
+    HomeBanner: {
+      CallToAction: "Contate me",
+      Profession: "Desenvolvedor Web Junior",
+      Text: "Bem vindo(a) ao meu curriculo online. Sou um desenvolvedor web junior com conhecimentos de frontend e backend. Acredito que nesta página tenha uma boa quantidade de informações sobre minhas competências e experiências. " + 
+        "Mas, qualquer coisa, é possível me enviar um email pelo botão abaixo. No rodapé da página há outros meios de comunicação ou links externos que possam lhe interessar."
     },
     InfoCards: {
       Education: {

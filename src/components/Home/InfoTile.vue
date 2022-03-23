@@ -122,8 +122,9 @@ export default {
 
 .item:hover{
   /* padding: 20px 0; */
-  background-color: var(--primary-color);
-  color: black !important;
+  background-color: var(--light-color);
+  border-color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 
 .information{
