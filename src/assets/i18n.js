@@ -131,7 +131,7 @@ export default {
         TextNineth: "Neste projeto, estive envolvido no back-end e front-end, no desenvolvimento de algumas funcionalidades deste sistema de gerenciamento de comandas para restaurantes. Ele foi feito em Vue.js e ExpressJs. Infelizmente, apesar de ter sua primeira versão finalizada, devido a pesquisas de mercado o projeto foi interrompido antes de ser comercializado.",
         TextTenth: "Durante a faculdade, realizei um estágio extracurricular na COIN - Coordenadoria de Informática da UFGD - Universidade Federal da Grande Dourados, no suporte ao usuário, que envolviam trabalhos de suporte aos usuários (discentes e técnicos da instituição), referentes à computadores e conexão de rede e internet.",
         TextEleventh: "Como critério de conclusão do meu curso Técnico em Eletronica, realizei um estágio na Aureon, empresa de comércio e fabricação de equipamentos de iluminação de emergência. O trabalho consistia em realizar a calibragem e manutenção dos equipamentos na linha de produção, que envolviam em sua totalidade em produtos eletrônicos analógicos.",
-        TextTwelveth: "",
+        TextTwelveth: "Neste serviço, fui responsável pelo desenvolvimento da API do sistema Rifaisso, que foi desenvolvido do zero até sua primeira versão comercial, feito em Typescript com AdonisJs e docker. Para o desenvolvimento desta API, foi necessário realizar integração com a API do mercado pago, criação de rotinas CRON, além do aprendizado do AdonisJs que até o momento não havia utilizado.",
       },
       Personal: {
         PageTitle: "Sobre Mim",

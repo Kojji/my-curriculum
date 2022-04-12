@@ -21,7 +21,7 @@
 
 			</div>
 			<div data-spy="scroll" data-target="#experience-card-list" data-offset="20" class="scrollspy-example col-8">
-				<h4>{{$t('InfoCards.Experience.SectionOne')}}</h4>
+				<h4 class="mt-3 mb-2">{{$t('InfoCards.Experience.SectionOne')}}</h4>
 				<h5 id="list-item-12">{{$t('InfoCards.Experience.TitleTwelveth')}}</h5>
 				<p class="content-item" >{{$t('InfoCards.Experience.TextTwelveth')}}</p>
 				<h5 id="list-item-1">{{$t('InfoCards.Experience.TitleFirst')}}</h5>
@@ -30,7 +30,7 @@
 				<p class="content-item">{{$t('InfoCards.Experience.TextSecond')}}</p>
 				<h5 id="list-item-3">{{$t('InfoCards.Experience.TitleThird')}}</h5>
 				<p class="content-item">{{$t('InfoCards.Experience.TextThird')}}</p>
-				<h4>{{$t('InfoCards.Experience.SectionTwo')}}</h4>
+				<h4 class="mt-3 mb-2">{{$t('InfoCards.Experience.SectionTwo')}}</h4>
 				<h5 id="list-item-4">{{$t('InfoCards.Experience.TitleFourth')}}</h5>
 				<p class="content-item">{{$t('InfoCards.Experience.TextFourth')}}</p>
 				<h5 id="list-item-5">{{$t('InfoCards.Experience.TitleFifth')}}</h5>
@@ -43,7 +43,7 @@
 				<p class="content-item">{{$t('InfoCards.Experience.TextEigth')}}</p>
 				<h5 id="list-item-9">{{$t('InfoCards.Experience.TitleNineth')}}</h5>
 				<p class="content-item">{{$t('InfoCards.Experience.TextNineth')}}</p>
-				<h4>{{$t('InfoCards.Experience.SectionThree')}}</h4>
+				<h4 class="mt-3 mb-2">{{$t('InfoCards.Experience.SectionThree')}}</h4>
 				<h5 id="list-item-10">{{$t('InfoCards.Experience.TitleTenth')}}</h5>
 				<p class="content-item">{{$t('InfoCards.Experience.TextTenth')}}</p>
 				<h5 id="list-item-11">{{$t('InfoCards.Experience.TitleEleventh')}}</h5>
