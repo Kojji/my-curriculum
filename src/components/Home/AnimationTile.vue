@@ -11,7 +11,9 @@
                 <p class="role-text text-size-2">{{$t('HomeBanner.Profession')}}</p>
               </div>
               <p class="py-3" style="font-weight: bold;">{{$t('HomeBanner.Text')}}</p>
-              <button type="button" class="btn color-button">{{$t('HomeBanner.CallToAction')}}</button>
+              <a href="mailto:fernandokojiyama@gmail.com" target="_blank">
+                <button type="button" class="btn color-button">{{$t('HomeBanner.CallToAction')}}</button>
+              </a>
             </div>
           </div>
         </div>
@@ -112,6 +114,7 @@ export default {
 .color-button{
   background-color: var(--primary-color);
   color: white;
+  font-weight: bold;
 }
 
 .role-text{

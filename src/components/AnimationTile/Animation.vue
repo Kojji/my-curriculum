@@ -48,7 +48,7 @@ export default {
     background: #b2b9ed;
   }
   100% {
-    background: #b2edb9;
+    background: #eff0bc;
   }
 }
 

@@ -71,11 +71,11 @@ export default {
     font-size: 11px;
   }
   .item:hover{
-    padding: 4px 4px;
+    padding: 4px 7px;
     margin: 0px 2px;
   }
   .selected{
-    padding: 4px 4px !important;
+    padding: 4px 7px !important;
   }
 }
 

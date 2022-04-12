@@ -1,6 +1,6 @@
 <template>
-  <div class="container" id="animation-card">
-    aNIMAÇÕES
+  <div class="container pt-4" id="animation-card">
+    <h2 class="my-4">{{$t('AnimationCard.Title')}}</h2>
   </div>
 </template>
 

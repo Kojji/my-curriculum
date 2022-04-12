@@ -12,6 +12,10 @@ export default {
       Profession: "Junior Web Developer",
       Text: "Hi, "
     },
+    AnimationCard: {
+      Title: "My Animations",
+      Text: ""
+    },
     InfoCards: {
       Education: {
         ItemTitleOne: "2022 - [Computer Engineer] UFGD",
@@ -38,6 +42,7 @@ export default {
         TitleNineth: "2020 - ComandasApp",
         TitleTenth: "Mar. 2016 ~ Jul. 2016 - [Internship] UFGD-COIN",
         TitleEleventh: "Apr. 2013 ~ Aug. 2013 - [Internship] Aureon",
+        TitleTwelveth: "Mar. 2022 ~ Apr. 2022 - [Freelance] Rifaisso",
         TextFirst: "At this service, I took part into the development of the first versions of 'TeachLearn', developed in Vue.js with Quasar and Express.js. My tasks involved front-end and back-end development, but my tasks were mainly on the API's endpoints development. " +
           "One of my most notorius activities at this service, was the development and implementation of a system's chat made with socket.io.",
         TextSecond: "After my Computer Engineering mandatory internship, I did some services at 'Dourasoft' as a Freelancer. I developed a whatsapp bot with Java and selenium and integrated it into their comercialized system. I also created a SQL script for the database migration from their desktop legacy system to their newer web app system.",
@@ -51,6 +56,7 @@ export default {
         TextNineth: "",
         TextTenth: "",
         TextEleventh: "",
+        TextTwelveth: "",
       },
       Personal: {
         PageTitle: "About Me",
@@ -79,6 +85,10 @@ export default {
       Text: "Bem vindo(a) ao meu curriculo online. Sou um desenvolvedor web junior com conhecimentos de frontend e backend. Acredito que nesta página tenha uma boa quantidade de informações sobre minhas competências e experiências. " + 
         "Mas, qualquer coisa, é possível me enviar um email pelo botão abaixo. No rodapé da página há outros meios de comunicação ou links externos que possam lhe interessar."
     },
+    AnimationCard: {
+      Title: "Minhas Animações",
+      Text: ""
+    },
     InfoCards: {
       Education: {
         ItemTitleOne: "2022 - [Engenheiro de Computação] UFGD",
@@ -106,6 +116,7 @@ export default {
         TitleNineth: "2020 - ComandasApp",
         TitleTenth: "Mar. 2016 ~ Jul. 2016 - [Estágio] UFGD-COIN",
         TitleEleventh: "Abr. 2013 ~ Ago. 2013 - [Estágio] Aureon",
+        TitleTwelveth: "Mar. 2022 ~ Abr. 2022 - [Freelance] Rifaisso",
         TextFirst: "Neste serviço, tive parte no desenvolvimento das primeiras versões do sistema 'TeachLearn', desenvolvido em Vue.js com Quasar e Express.js. Realizei atividades tanto no front-end quanto no back-end, porém a maioria delas foram focadas no desenvolvimento de endpoints da API do sistema. " +
           "Um atividade notória em minha atuação foi o desenvolvimento do chat do sistema, utilizando socket.io.",
         TextSecond: "Após a finalização do estágio obrigatório, realizei uns serviços como Freelancer para a 'DouraSoft', onde desenvolvi e integrei um bot de whatsapp em Java usando Selenium no sistema comercializado pela empresa. Um outro serviço realizado também foi a criação do script de migração do banco de dados do sistema legado de desktop da empresa, para o novo esqauema de banco de dados do sistema web atual.",
@@ -120,6 +131,7 @@ export default {
         TextNineth: "Neste projeto, estive envolvido no back-end e front-end, no desenvolvimento de algumas funcionalidades deste sistema de gerenciamento de comandas para restaurantes. Ele foi feito em Vue.js e ExpressJs. Infelizmente, apesar de ter sua primeira versão finalizada, devido a pesquisas de mercado o projeto foi interrompido antes de ser comercializado.",
         TextTenth: "Durante a faculdade, realizei um estágio extracurricular na COIN - Coordenadoria de Informática da UFGD - Universidade Federal da Grande Dourados, no suporte ao usuário, que envolviam trabalhos de suporte aos usuários (discentes e técnicos da instituição), referentes à computadores e conexão de rede e internet.",
         TextEleventh: "Como critério de conclusão do meu curso Técnico em Eletronica, realizei um estágio na Aureon, empresa de comércio e fabricação de equipamentos de iluminação de emergência. O trabalho consistia em realizar a calibragem e manutenção dos equipamentos na linha de produção, que envolviam em sua totalidade em produtos eletrônicos analógicos.",
+        TextTwelveth: "",
       },
       Personal: {
         PageTitle: "Sobre Mim",
@@ -127,7 +139,7 @@ export default {
         "Apesar de já ter um pouco de experiência, reconheço que há muito espaço para crescimento já que ainda me falta conhecimento, ainda mais nessa área que demanda evolução constante, mas acredito ter o potêncial e a persistência necessária para o aprendizado.",
         ParagraphSecond: "Tenho diversos interesses além da programação, um deles é o desenho, e justamente por isso, que tenho um carinho especial por animações em css e design de telas. Porém ainda não tenho as habilidades necessárias para ser capaz de desenvolver plenamente o que visualizo. Mas acredito que um dia chegarei lá. " +
         "Meu stack de desenvolvimento web principal é Vue.js, Quasar e Express.js, mas além de outros conceitos e tecnologias, também estou aprendendo a utilização de serviços cloud. Para ter uma visão geral do que eu sei, pode ir direto na aba \"Habilidades\".",
-        ParagraphThird: "Você é bem vindo para visualizar este meu currículo virtual inteiramente, mas quando quiser, pode entrar em contato comigo diretamente com os links presentes no Footer dessa página. 😁"
+        ParagraphThird: "Você é bem vindo para visualizar este meu currículo virtual inteiramente, mas se quiser, há links no rodapé desta página que podem ser úteis para ver mais coisas sobre mim, ou entrar em contato. 😁"
       },
       Skills: {
         TextOne: "Abaixo você irá encontrar um resumo de algumas habilidades que tenho, em específico na área de programação, na aba 'Experiência' "
