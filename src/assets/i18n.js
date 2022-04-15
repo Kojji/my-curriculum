@@ -143,14 +143,15 @@ export default {
       Personal: {
         PageTitle: "Sobre Mim",
         ParagraphFirst: "Olá, sou o Fernando. Prazer em ter você aqui. Recentemente, me formei em Engenharia de Computação, durante a graduação tive algumas atuações remuneradas como desenvolvedor web e desenvolvi alguns outros projetos, que podem ser vistos na aba \"Experiência\". " +
-        "Apesar de já ter um pouco de experiência, reconheço que há muito espaço para crescimento já que ainda me falta conhecimento, ainda mais nessa área que demanda evolução constante, mas acredito ter o potêncial e a persistência necessária para o aprendizado.",
+          "Apesar de já ter um pouco de experiência, reconheço que há muito espaço para crescimento já que ainda me falta conhecimento, ainda mais nessa área que demanda evolução constante, mas acredito ter o potêncial e a persistência necessária para o aprendizado.",
         ParagraphSecond: "Tenho diversos interesses além da programação, um deles é o desenho, e justamente por isso, que tenho um carinho especial por animações em css e design de telas. Porém ainda não tenho as habilidades necessárias para ser capaz de desenvolver plenamente o que visualizo. Mas acredito que um dia chegarei lá. " +
-        "Meu stack de desenvolvimento web principal é Vue.js, Quasar e Express.js, mas além de outros conceitos e tecnologias, também estou aprendendo a utilização de serviços cloud. Para ter uma visão geral do que eu sei, pode ir direto na aba \"Habilidades\".",
+          "Meu stack de desenvolvimento web principal é Vue.js, Quasar e Express.js, mas além de outros conceitos e tecnologias, também estou aprendendo a utilização de serviços cloud. Para ter uma visão geral do que eu sei, pode ir direto na aba \"Habilidades\".",
         ParagraphThird: "Você é bem vindo para visualizar este meu currículo virtual inteiramente, mas se quiser, há links no rodapé desta página que podem ser úteis para ver mais coisas sobre mim, ou entrar em contato. 😁"
       },
       Skills: {
         Title: "Minhas Habilidades",
-        TextOne: ""
+        TextOne: "Esta seção tem o objetivo de gerar uma visão mais dinâmica e direta de minhas habilidades e conhecimentos, a leitura da seção de 'Experiência' serve como um complemento, aprofundando um pouco mais sobre o nível de conhecimento e habilidades que tenho. " +
+          "Listados abaixo estão ferramentas e frameworks diversos que sintetizam de maneira bem compacta meu conhecimento e experiêcia"
       }
     }
   }
