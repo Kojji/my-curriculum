@@ -12,19 +12,22 @@ export default {
       Profession: "Junior Web Developer",
       Text: "Hi, "
     },
-    AnimationCard: {
-      Title: "My Animations",
-      Text: ""
-    },
     InfoCards: {
+      AnimationCard: {
+        Title: "My Animations",
+        Text: ""
+      },
       Education: {
+        PageTitle: "Education",
         ItemTitleOne: "2022 - [Computer Engineer] UFGD",
         ItemTitleTwo: "2014 - [Electronics Technician] IFSP-SP",
         ItemTitleThree: "2017 - [First Certificate in English (FCE)] Cambrigde English",
         ItemTitleFour: "2018 - [Certificate in Advanced English (CAE)] Cambrigde English",
         TitleFirst: "Education Background",
         TitleSecond: "Certifications",
-        ItemTextOne: ""
+        ItemTextOne: "",
+        ItemTextThree: "",
+        ItemTextFour: ""
       },
       Experience: {
         PageTitle: "Previous Experience",
@@ -67,6 +70,7 @@ export default {
         ParagraphThird: "You're more than welcome to navigate through this curriculum, but if you prefer, you can get in touch with me using the links present on this page's Footer. 😁"
       },
       Skills: {
+        Title: "Habilidades",
         TextOne: ""
       }
     }
@@ -85,12 +89,13 @@ export default {
       Text: "Bem vindo(a) ao meu curriculo online. Sou um desenvolvedor web junior com conhecimentos de frontend e backend. Acredito que nesta página tenha uma boa quantidade de informações sobre minhas competências e experiências. " + 
         "Mas, qualquer coisa, é possível me enviar um email pelo botão abaixo. No rodapé da página há outros meios de comunicação ou links externos que possam lhe interessar."
     },
-    AnimationCard: {
-      Title: "Minhas Animações",
-      Text: ""
-    },
     InfoCards: {
+      AnimationCard: {
+        Title: "Minhas Animações",
+        Text: ""
+      },
       Education: {
+        PageTitle: "Formação",
         ItemTitleOne: "2022 - [Engenheiro de Computação] UFGD",
         ItemTitleTwo: "2014 - [Técnico em Eletrônica] IFSP-SP",
         ItemTitleThree: "2018 - [Certificate in Advanced English (CAE)] Cambrigde English",
@@ -99,6 +104,8 @@ export default {
         TitleSecond: "Certificações",
         ItemTextOne: "No início de 2022, conclui o curso de Engenharia de Computação na Universidade Federal da Grande Dourados (UFGD). Como critério de formação, realizei um estágio na Dourasoft, e desenvolvi, com outro acadêmico, um sistema de coleta de dados do solo, composto de multiplos equipamentos de comunicação sem fio, denominado Agriv, como TCC.",
         ItemTextTwo: "No início de 2014, conclui o curso de técnico em eletrônica e ensino médio no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo (IFSP-SP). Como critérios de formação, realizei um estágio na Aureon, e desenvolvi, junto com outros acadêmicos, um sistema de trava eletrônica por senha como TCC.",
+        ItemTextThree: "",
+        ItemTextFour: ""
       },
       Experience: {
         PageTitle: "Experiência Profissional",
@@ -142,7 +149,8 @@ export default {
         ParagraphThird: "Você é bem vindo para visualizar este meu currículo virtual inteiramente, mas se quiser, há links no rodapé desta página que podem ser úteis para ver mais coisas sobre mim, ou entrar em contato. 😁"
       },
       Skills: {
-        TextOne: "Abaixo você irá encontrar um resumo de algumas habilidades que tenho, em específico na área de programação, na aba 'Experiência' "
+        Title: "Minhas Habilidades",
+        TextOne: ""
       }
     }
   }

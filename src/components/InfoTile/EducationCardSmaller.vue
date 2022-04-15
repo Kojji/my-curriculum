@@ -1,7 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container pt-4">
+    <h2 class="my-4">{{$t('InfoCards.Education.PageTitle')}}</h2>
     <div class="accordion" id="education-accordion">
-      <h2>{{$t('InfoCards.Education.TitleFirst')}}</h2>
+      <h3>{{$t('InfoCards.Education.TitleFirst')}}</h3>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -23,7 +24,7 @@
         </div>
       </div>
       
-      <h2>{{$t('InfoCards.Education.TitleSecond')}}</h2>
+      <h3>{{$t('InfoCards.Education.TitleSecond')}}</h3>
       <div style="border-top: 0px;">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">

@@ -23,7 +23,8 @@
       </div>
     </div>
     <div class="information">
-      <EducationCard v-if="horizontalMenuState == 'Education'" />
+      <EducationCardSmaller v-if="horizontalMenuState == 'Education' && windowWidth < 992" />
+      <EducationCardBigger v-if="horizontalMenuState == 'Education' && windowWidth > 991.98" />
       <ExperienceCardSmaller v-if="horizontalMenuState == 'Experience' && windowWidth < 992" />
       <ExperienceCardBigger v-if="horizontalMenuState == 'Experience' && windowWidth > 991.98" />
       <PersonalCard v-if="horizontalMenuState == 'Personal'" />
@@ -34,7 +35,8 @@
 </template>
 
 <script>
-import EducationCard from '@/components/InfoTile/EducationCard.vue'
+import EducationCardBigger from '@/components/InfoTile/EducationCardBigger.vue'
+import EducationCardSmaller from '@/components/InfoTile/EducationCardSmaller.vue'
 import ExperienceCardSmaller from '@/components/InfoTile/ExperienceCardSmaller.vue'
 import ExperienceCardBigger from '@/components/InfoTile/ExperienceCardBigger.vue'
 import PersonalCard from '@/components/InfoTile/PersonalCard.vue'
@@ -44,7 +46,8 @@ export default {
   name: 'InfoTile',
   components: {
     AnimationCard,
-    EducationCard,
+    EducationCardSmaller,
+    EducationCardBigger,
     ExperienceCardSmaller,
     ExperienceCardBigger,
     PersonalCard,
