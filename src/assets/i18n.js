@@ -15,7 +15,9 @@ export default {
     InfoCards: {
       AnimationCard: {
         Title: "My Animations",
-        Text: ""
+        NavMessage: "Press or keep the mouse over the image",
+        TextOne: "",
+        TextTwo: "",
       },
       Education: {
         PageTitle: "Education",
@@ -92,7 +94,9 @@ export default {
     InfoCards: {
       AnimationCard: {
         Title: "Minhas Animações",
-        Text: ""
+        NavMessage: "Pressione ou deixe o mouse na imagem",
+        TextOne: "",
+        TextTwo: "",
       },
       Education: {
         PageTitle: "Formação",
