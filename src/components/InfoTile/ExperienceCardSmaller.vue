@@ -142,6 +142,23 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 575.98px) {
+  .accordion-body{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .accordion-body{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .accordion-body{
+    font-size: 18px;
+  }
+}
 .accordion-body{
   text-align: justify;
   text-justify: inter-word;

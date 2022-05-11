@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-4" id="animation-card">
     <h2 class="my-4">{{$t('InfoCards.Skills.Title')}}</h2>
-    <h4>{{$t('InfoCards.Skills.TextOne')}}</h4>
+    <p class="content-text">{{$t('InfoCards.Skills.TextOne')}}</p>
     <hr />
     <h3>Uso e Estudo mais aprofundados</h3>
     <div class="section">Express</div>
@@ -31,6 +31,28 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 575.98px) {
+  .content-text{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .content-text{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .content-text{
+    font-size: 18px;
+  }
+}
+
+.content-text{
+  text-align: justify;
+}
+
 #skill-card{
   margin-bottom: var(--bottom-margin);
 }

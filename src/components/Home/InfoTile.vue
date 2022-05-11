@@ -73,25 +73,11 @@ export default {
   .item a{
     font-size: 11px;
   }
-  .item:hover{
-    padding: 4px 7px;
-    margin: 0px 2px;
-  }
-  .selected{
-    padding: 4px 7px !important;
-  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .item a{
     font-size: 13px;
-  }
-  .item:hover{
-    padding: 6px 7px;
-    margin: 0px 2px;
-  }
-  .selected{
-    padding: 6px 7px !important;
   }
 }
 

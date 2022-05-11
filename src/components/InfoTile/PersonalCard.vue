@@ -21,26 +21,44 @@ export default {
   name: 'PersonalCard',
   data() {
     return {
-      photo: require("@/assets/logo.png")
+      photo: require("@/assets/photo.jpg")
     }
   }
 }
 </script>
 
 <style scoped>
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .photo-slot{
     width: 22%;
+  }
+  .about-me-text p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .photo-slot{
+    width: 22%;
+  }
+  .about-me-text p{
+    font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
   .photo-slot{
     width: 17%;
   }
+  .about-me-text p{
+    font-size: 18px;
+  }
 }
 @media (min-width: 992px) {
   .photo-slot{
     width: 12%;
+  }
+  .about-me-text p{
+    font-size: 18px;
   }
 }
 
@@ -51,7 +69,6 @@ export default {
 
 .photo-slot{
   border-radius: 50%;
-  background: red;
 }
 
 #personal-card{

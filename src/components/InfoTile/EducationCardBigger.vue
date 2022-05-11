@@ -10,11 +10,11 @@
 				<a class="list-group-item list-group-item-action" href="#list-item-3">{{$t('InfoCards.Education.ItemTitleThree')}}</a>
 				<a class="list-group-item list-group-item-action" href="#list-item-4">{{$t('InfoCards.Education.ItemTitleFour')}}</a>
 			</div>
-			<div data-spy="scroll" data-target="#experience-card-list" data-offset="20" class="scrollspy-example col-8">
+			<div data-spy="scroll" data-target="#experience-card-list" data-offset="20" class="scrollspy-example col-8" id="content">
 				<hr />
 				<h4 class="mt-3 mb-2">{{$t('InfoCards.Education.TitleFirst')}}</h4>
 				<h5 id="list-item-1">{{$t('InfoCards.Education.ItemTitleOne')}}</h5>
-				<p class="content-item" >{{$t('InfoCards.Education.ItemTextOne')}}</p>
+				<p class="content-item">{{$t('InfoCards.Education.ItemTextOne')}}</p>
 				<h5 id="list-item-2">{{$t('InfoCards.Education.ItemTitleTwo')}}</h5>
 				<p class="content-item">{{$t('InfoCards.Education.ItemTextTwo')}}</p>
 				<hr />
@@ -40,7 +40,7 @@ export default {
 }
 
 .content-item{
+  font-size: 18px;
 	text-align: justify;
-  text-justify: inter-word;
 }
 </style>

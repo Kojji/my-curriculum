@@ -68,7 +68,7 @@ export default {
 }
 
 .content-item{
+	font-size: 18px;
 	text-align: justify;
-  text-justify: inter-word;
 }
 </style>

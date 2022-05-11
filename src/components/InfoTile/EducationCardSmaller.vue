@@ -10,7 +10,7 @@
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#education-accordion">
-          <div class="accordion-body">{{$t('InfoCards.Education.ItemTextOne')}}</div>
+          <div class="accordion-body education-text">{{$t('InfoCards.Education.ItemTextOne')}}</div>
         </div>
       </div>
       <div class="accordion-item">
@@ -20,7 +20,7 @@
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#education-accordion">
-          <div class="accordion-body">{{$t('InfoCards.Education.ItemTextTwo')}}</div>
+          <div class="accordion-body education-text">{{$t('InfoCards.Education.ItemTextTwo')}}</div>
         </div>
       </div>
       
@@ -33,7 +33,7 @@
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#education-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <div class="accordion-body education-text">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
           </div>
         </div>
         <div class="accordion-item">
@@ -43,7 +43,7 @@
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#education-accordion">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            <div class="accordion-body education-text">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
           </div>
         </div>
         <!-- <div class="accordion-item">
@@ -68,9 +68,26 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 575.98px) {
+  .accordion-body{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .accordion-body{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .accordion-body{
+    font-size: 18px;
+  }
+}
+
 .accordion-body{
   text-align: justify;
-  text-justify: inter-word;
 }
 
 .accordion-button:not(.collapsed){

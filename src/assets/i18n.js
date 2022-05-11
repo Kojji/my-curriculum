@@ -9,7 +9,7 @@ export default {
     },
     HomeBanner: {
       CallToAction: "Contact Me",
-      Profession: "Junior Web Developer",
+      Profession: "Web Developer",
       Text: "Hi, "
     },
     InfoCards: {
@@ -87,8 +87,8 @@ export default {
     },
     HomeBanner: {
       CallToAction: "Contate me",
-      Profession: "Desenvolvedor Web Junior",
-      Text: "Bem vindo(a) ao meu curriculo online. Sou um desenvolvedor web junior com conhecimentos de frontend e backend. Acredito que nesta página tenha uma boa quantidade de informações sobre minhas competências e experiências. " + 
+      Profession: "Desenvolvedor Web",
+      Text: "Bem vindo(a) ao meu curriculo online. Sou um desenvolvedor web com conhecimentos de frontend e backend. Acredito que nesta página tenha uma boa quantidade de informações sobre minhas competências e experiências. " + 
         "Mas, qualquer coisa, é possível me enviar um email pelo botão abaixo. No rodapé da página há outros meios de comunicação ou links externos que possam lhe interessar."
     },
     InfoCards: {
@@ -127,7 +127,7 @@ export default {
         TitleNineth: "2020 - ComandasApp",
         TitleTenth: "Mar. 2016 ~ Jul. 2016 - [Estágio] UFGD-COIN",
         TitleEleventh: "Abr. 2013 ~ Ago. 2013 - [Estágio] Aureon",
-        TitleTwelveth: "Mar. 2022 ~ Abr. 2022 - [Freelance] Rifaisso",
+        TitleTwelveth: "Mar. 2022 ~ Mai. 2022 - [Freelance] Rifaisso",
         TextFirst: "Neste serviço, tive parte no desenvolvimento das primeiras versões do sistema 'TeachLearn', desenvolvido em Vue.js com Quasar e Express.js. Realizei atividades tanto no front-end quanto no back-end, porém a maioria delas foram focadas no desenvolvimento de endpoints da API do sistema. " +
           "Um atividade notória em minha atuação foi o desenvolvimento do chat do sistema, utilizando socket.io.",
         TextSecond: "Após a finalização do estágio obrigatório, realizei uns serviços como Freelancer para a 'DouraSoft', onde desenvolvi e integrei um bot de whatsapp em Java usando Selenium no sistema comercializado pela empresa. Um outro serviço realizado também foi a criação do script de migração do banco de dados do sistema legado de desktop da empresa, para o novo esqauema de banco de dados do sistema web atual.",

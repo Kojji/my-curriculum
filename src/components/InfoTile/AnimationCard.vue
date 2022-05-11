@@ -4,6 +4,9 @@
 
     <div class="animation-gallery row">
       <div class="card col-12 my-2 py-1">
+        <div class="card-body pb-0">
+          <h5 class="card-title"><a href="https://codepen.io/kojji/pen/QWOJJGQ" target="_blank" class="link-info">Beach Waves</a></h5>
+        </div>
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page">{{$t('InfoCards.AnimationCard.NavMessage')}}</a>
@@ -12,13 +15,12 @@
         <video @mouseover="playOnHover($refs.beachVid)" @mouseleave="pauseOnLeave($refs.beachVid)" ref="beachVid">
           <source :src="beachWavesVideo" type="video/mp4">
         </video>
-        <div class="card-body">
-          <h5 class="card-title">Beach Waves</h5>
-          <p class="card-text"><a href="https://codepen.io/kojji/pen/QWOJJGQ" target="_blank" class="link-info">[codepen]</a> - {{$t('InfoCards.AnimationCard.TextOne')}}</p>
-        </div>
         
       </div>
       <div class="card col-12 my-2 py-1">
+        <div class="card-body pb-0">
+          <h5 class="card-title"><a href="https://codepen.io/kojji/pen/zYPyPJV" target="_blank" class="link-info">City lights</a></h5>
+        </div>
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page">{{$t('InfoCards.AnimationCard.NavMessage')}}</a>
@@ -27,10 +29,7 @@
         <video @mouseover="playOnHover($refs.cityLightsVid)" @mouseleave="pauseOnLeave($refs.cityLightsVid)" ref="cityLightsVid">
           <source :src="cityLightsVideo" type="video/mp4">
         </video>
-        <div class="card-body">
-          <h5 class="card-title">City lights</h5>
-          <p class="card-text"><a href="https://codepen.io/kojji/pen/zYPyPJV" target="_blank" class="link-info">[codepen]</a> - {{$t('InfoCards.AnimationCard.TextTwo')}}</p>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -57,4 +56,30 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 575.98px) {
+  .nav-link{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-link{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .nav-link{
+    font-size: 18px;
+  }
+}
+.link-info {
+  color: black; 
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: lightskyblue; 
+}
 </style>

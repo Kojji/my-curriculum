@@ -20,7 +20,7 @@
 		<div class="main-text-slot" v-if="windowWidth < 992">
 			<div>
 				<p class="role-text text-size-1">Fernando Koji Yamashiro</p>
-				<p class="role-text text-size-2">Desenvolvedor Web Junior</p>
+				<p class="role-text text-size-2">{{$t('HomeBanner.Profession')}}</p>
 			</div>
 		</div>
 	</div>
