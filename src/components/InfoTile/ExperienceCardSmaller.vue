@@ -4,12 +4,22 @@
     <div class="accordion" id="experience-accordion">
       <h3>{{$t('InfoCards.Experience.SectionOne')}}</h3>
       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThirteen">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+            {{$t('InfoCards.Experience.TitleThirteenth')}}
+          </button>
+        </h2>
+        <div id="collapseThirteen" class="accordion-collapse collapse show" aria-labelledby="headingThirteen" data-bs-parent="#experience-accordion">
+          <div class="accordion-body">{{$t('InfoCards.Experience.TextThirteenth')}}</div>
+        </div>
+      </div>
+      <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwelve">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
             {{$t('InfoCards.Experience.TitleTwelveth')}}
           </button>
         </h2>
-        <div id="collapseTwelve" class="accordion-collapse collapse show" aria-labelledby="headingTwelve" data-bs-parent="#experience-accordion">
+        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#experience-accordion">
           <div class="accordion-body">{{$t('InfoCards.Experience.TextTwelveth')}}</div>
         </div>
       </div>

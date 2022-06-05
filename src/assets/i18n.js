@@ -48,6 +48,7 @@ export default {
         TitleTenth: "Mar. 2016 ~ Jul. 2016 - [Internship] UFGD-COIN",
         TitleEleventh: "Apr. 2013 ~ Aug. 2013 - [Internship] Aureon",
         TitleTwelveth: "Mar. 2022 ~ Apr. 2022 - [Freelance] Rifaisso",
+        TitleThirteenth: "",
         TextFirst: "At this service, I took part into the development of the first versions of 'TeachLearn', developed in Vue.js with Quasar and Express.js. My tasks involved front-end and back-end development, but my tasks were mainly on the API's endpoints development. " +
           "One of my most notorius activities at this service, was the development and implementation of a system's chat made with socket.io.",
         TextSecond: "After my Computer Engineering mandatory internship, I did some services at 'Dourasoft' as a Freelancer. I developed a whatsapp bot with Java and selenium and integrated it into their comercialized system. I also created a SQL script for the database migration from their desktop legacy system to their newer web app system.",
@@ -62,6 +63,7 @@ export default {
         TextTenth: "",
         TextEleventh: "",
         TextTwelveth: "",
+        TextThirteenth: ""
       },
       Personal: {
         PageTitle: "About Me",
@@ -130,6 +132,7 @@ export default {
         TitleTenth: "Mar. 2016 ~ Jul. 2016 - [Estágio] UFGD-COIN",
         TitleEleventh: "Abr. 2013 ~ Ago. 2013 - [Estágio] Aureon",
         TitleTwelveth: "Mar. 2022 ~ Mai. 2022 - [Freelance] Rifaisso",
+        TitleThirteenth: "Mai. 2022 ~ Atual - [Analista de Desenvolvimento Jr.] Mutant",
         TextFirst: "Neste serviço, tive parte no desenvolvimento das primeiras versões do sistema 'TeachLearn', desenvolvido em Vue.js com Quasar e Express.js. Realizei atividades tanto no front-end quanto no back-end, porém a maioria delas foram focadas no desenvolvimento de endpoints da API do sistema. " +
           "Um atividade notória em minha atuação foi o desenvolvimento do chat do sistema, utilizando socket.io.",
         TextSecond: "Após a finalização do estágio obrigatório, realizei uns serviços como Freelancer para a 'DouraSoft', onde desenvolvi e integrei um bot de whatsapp em Java usando Selenium no sistema comercializado pela empresa. Um outro serviço realizado também foi a criação do script de migração do banco de dados do sistema legado de desktop da empresa, para o novo esqauema de banco de dados do sistema web atual.",
@@ -145,6 +148,7 @@ export default {
         TextTenth: "Durante a faculdade, realizei um estágio extracurricular na COIN - Coordenadoria de Informática da UFGD - Universidade Federal da Grande Dourados, no suporte ao usuário, que envolviam trabalhos de suporte aos usuários (discentes e técnicos da instituição), referentes à computadores e conexão de rede e internet.",
         TextEleventh: "Como critério de conclusão do meu curso Técnico em Eletronica, realizei um estágio na Aureon, empresa de comércio e fabricação de equipamentos de iluminação de emergência. O trabalho consistia em realizar a calibragem e manutenção dos equipamentos na linha de produção, que envolviam em sua totalidade em produtos eletrônicos analógicos.",
         TextTwelveth: "Neste serviço, fui responsável pelo desenvolvimento da API do sistema Rifaisso, que foi desenvolvido do zero até sua primeira versão comercial, feito em Typescript com AdonisJs e docker. Para o desenvolvimento desta API, foi necessário realizar integração com a API do mercado pago, criação de rotinas CRON, além do aprendizado do AdonisJs que até o momento não havia utilizado.",
+        TextThirteenth: ""
       },
       Personal: {
         PageTitle: "Sobre Mim",

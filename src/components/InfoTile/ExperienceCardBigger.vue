@@ -5,6 +5,7 @@
 		<div class="row">
 			<div id="experience-card-list" class="list-group col-4">
 				<h4 class="mt-3">{{$t('InfoCards.Experience.SectionOne')}}</h4>
+				<a class="list-group-item list-group-item-action" href="#list-item-13">{{$t('InfoCards.Experience.TitleThirteenth')}}</a>
 				<a class="list-group-item list-group-item-action" href="#list-item-12">{{$t('InfoCards.Experience.TitleTwelveth')}}</a>
 				<a class="list-group-item list-group-item-action" href="#list-item-1">{{$t('InfoCards.Experience.TitleFirst')}}</a>
 				<a class="list-group-item list-group-item-action" href="#list-item-2">{{$t('InfoCards.Experience.TitleSecond')}}</a>
@@ -23,6 +24,8 @@
 			</div>
 			<div data-spy="scroll" data-target="#experience-card-list" data-offset="20" class="scrollspy-example col-8">
 				<h4 class="mt-3 mb-2">{{$t('InfoCards.Experience.SectionOne')}}</h4>
+				<h5 id="list-item-13">{{$t('InfoCards.Experience.TitleThirteenth')}}</h5>
+				<p class="content-item" >{{$t('InfoCards.Experience.TextThirteenth')}}</p>
 				<h5 id="list-item-12">{{$t('InfoCards.Experience.TitleTwelveth')}}</h5>
 				<p class="content-item" >{{$t('InfoCards.Experience.TextTwelveth')}}</p>
 				<h5 id="list-item-1">{{$t('InfoCards.Experience.TitleFirst')}}</h5>
