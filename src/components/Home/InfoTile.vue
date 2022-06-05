@@ -103,6 +103,7 @@ export default {
   border-style: solid;
   cursor: pointer;
   border-width: 1px;
+  border-radius: 0.5rem;
 }
 
 .item a{
@@ -114,6 +115,7 @@ export default {
   background-color: var(--light-color);
   border-color: var(--accent-color);
   color: var(--accent-color) !important;
+  border-radius: 0.5rem;
 }
 
 .information{
@@ -125,6 +127,7 @@ export default {
   background-color: var(--accent-color);
   border-color: var(--light-color);
   color: var(--light-color);
+  border-radius: 0.5rem;
   /* cursor: not-allowed; */
 }
 

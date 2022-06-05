@@ -1,32 +1,95 @@
 <template>
   <div class="container pt-4" id="animation-card">
     <h2 class="my-4">{{$t('InfoCards.Skills.Title')}}</h2>
-    <p class="content-text">{{$t('InfoCards.Skills.TextOne')}}</p>
     <hr />
-    <h3>Uso e Estudo mais aprofundados</h3>
-    <div class="section">Express</div>
-    <div class="section">Firebase</div>
-    <div class="section">Github</div>
-    <div class="section">Quasar</div>
-    <div class="section">Vuetify</div>
-    <h3>Implementações e Leituras Simples</h3>
-    <div class="section">Azure</div>
-    <div class="section">Aws</div>
-    <div class="section">Google Cloud</div>
-    <div class="section">Docker</div>
-    <div class="section">Adonisjs</div>
-    <div class="section">CakePHP</div>
-    <h3>Outros Conhecimentos</h3>
-    <div class="section">shotcut</div>
-    <div class="section">photoshop</div>
-    <div class="section">gimp</div>
-    <div class="section">excel</div>
+    <div class="row">
+			<div class="col-4">
+        <div class="icon-box">
+          <h4 class="pt-3">{{$t('InfoCards.Skills.CardOne')}}</h4>
+          <div class="row justify-content-center">
+            <div :key="skill.name" v-for="skill of cardMainIcons" class="col-sm-6 col-lg-4 col-12">
+              <div class="p-3">
+                <img :src="skill.iconUrl" class="rounded" alt="...">
+              </div>
+              <p class="icon-text">{{skill.name}}</p>
+            </div>
+          </div>
+          <h4 class="mt-3 pt-3">{{$t('InfoCards.Skills.CardTwo')}}</h4>
+          <div class="row justify-content-center">
+            <div :key="skill.name" v-for="skill of cardExtraIcons" class="col-sm-6 col-lg-4 col-12">
+              <div class="p-3">
+                <img :src="skill.iconUrl" class="rounded" alt="...">
+              </div>
+              <p class="icon-text">{{skill.name}}</p>
+            </div>
+          </div>
+
+          <div class="section">Express</div>
+          <div class="section">Github</div>
+          <div class="section">Quasar</div>
+          <div class="section">Vuetify</div>
+          <h3>Implementações e Leituras Simples</h3>
+          <div class="section">Azure</div>
+          <div class="section">Google Cloud</div>
+          <div class="section">Docker</div>
+          <div class="section">Adonisjs</div>
+          <div class="section">CakePHP</div>
+          <h3>Outros Conhecimentos</h3>
+          <div class="section">shotcut</div>
+          <div class="section">photoshop</div>
+          <div class="section">gimp</div>
+          <div class="section">excel</div>
+        </div>
+      </div>
+      <div class="col-8">
+        <p class="content-text">{{$t('InfoCards.Skills.TextOne')}}</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SkillCard'
+  name: 'SkillCard',
+  data() {
+    return {
+      cardMainIcons: [
+        {
+          name: "Node.js",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          alt: "nodejs icon"
+        },
+        {
+          name: "Vue.js",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+          alt: "vuejs icon"
+        }
+      ],
+      cardExtraIcons: [
+        {
+          name: "Firebase",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+          alt: "firebase icon"
+        },
+        {
+          name: "AWS",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+          alt: "amazon web services icon"
+        },
+        {
+          name: "Typescript",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+          alt: "typescript icon"
+        },
+        {
+          name: "Docker",
+          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+          alt: "docker icon"
+        },
+      ]
+    }
+  }
+
 }
 </script>
 
@@ -35,10 +98,16 @@ export default {
   .content-text{
     font-size: 14px;
   }
+  .icon-text{
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .content-text{
+    font-size: 16px;
+  }
+  .icon-text{
     font-size: 16px;
   }
 }
@@ -47,10 +116,17 @@ export default {
   .content-text{
     font-size: 18px;
   }
+  .icon-text{
+    font-size: 18px;
+  }
 }
 
 .content-text{
   text-align: justify;
+}
+.icon-box{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.5rem;
 }
 
 #skill-card{

@@ -53,7 +53,7 @@ export default {
         TextSecond: "After my Computer Engineering mandatory internship, I did some services at 'Dourasoft' as a Freelancer. I developed a whatsapp bot with Java and selenium and integrated it into their comercialized system. I also created a SQL script for the database migration from their desktop legacy system to their newer web app system.",
         TextThird: "To conclude my Computer Engineering course, I did a internship at 'Dourasoft', where I developed an OCR functionality to be integrated into company's developed and comnercialized system. It was done with Amazon Textract (OCR). " + 
           "During the internship, Vue.js with Quasar, PHP with CakePHP, PostgreSQL, Google Cloud Services and Firebase skills were also learned.",
-        TextFourth: "[Project available on GitHub] For the development of this page, I've set an extra challenge for me, use Vue.js with bootstrap and host it with Azure Cloud Hosting, which I haven't done previously. The goal is trying to show that I can learn and accomplish a given activity",
+        TextFourth: "[Project available on GitHub] For the development of this page, I've set an extra challenge for me, use Vue.js with bootstrap, which I haven't done previously. The goal is trying to show that I can learn and accomplish a given activity",
         TextFifth: "[Project available on GitHub] This project consists of the development of a TCG card collection web page, similar to a photo gallery. Developed in Vue.js with Quasar and Express.js. The page still in its first version, and similar to the 'Cadastrare' project, I performed the domain acquisition and server hosting.",
         TextSixth: "[Project available on GitHub] In this project I developed a web app to manage the agenda and pacient's files of a dental clinic. Developed with Vue.js with Quasar and Express.js. In terms of experience, this project was important for introducing me to the procedures on how to acquire domains and hosting servers on Ubuntu command line.",
         TextSeventh: "'Agriv' ",
@@ -72,8 +72,10 @@ export default {
         ParagraphThird: "You're more than welcome to navigate through this curriculum, but if you prefer, you can get in touch with me using the links present on this page's Footer. 😁"
       },
       Skills: {
-        Title: "Habilidades",
-        TextOne: ""
+        Title: "Skills",
+        TextOne: "",
+        CardOne: "",
+        CardTwo: ""
       }
     }
   },
@@ -133,7 +135,7 @@ export default {
         TextSecond: "Após a finalização do estágio obrigatório, realizei uns serviços como Freelancer para a 'DouraSoft', onde desenvolvi e integrei um bot de whatsapp em Java usando Selenium no sistema comercializado pela empresa. Um outro serviço realizado também foi a criação do script de migração do banco de dados do sistema legado de desktop da empresa, para o novo esqauema de banco de dados do sistema web atual.",
         TextThird: "Como critério de conclusão do curso de Engenharia de Computação, realizei o estágio na 'DouraSoft', desenvolvendo uma funcionalidade de OCR para ser integrado ao sistema web desenvolvido e comercializado pela empresa. O desenvolvimento da nova funcionalidade foi bem sucedida, e realizada com Amazon Textract (OCR). " +
           "Durante o estágio, também houve o aprendizado de Vue.js com Quasar, PHP com CakePHP, PostgreQL, Google Cloud Services e Firebase.",
-        TextFourth: "[Projeto presente no GitHub] Para o desenvolvimento dessa página, eu propus um desafio extra para mim mesmo, ao usar pela primeira vez o Vue.js com Bootstrap para o desenvolvimento deste currículo, além do hosting através do Azure Cloud Hosting. Isto tudo para tentar mopstrar que eu tenho a capacidade de aprendizado para cumprir uma atividade designada.",
+        TextFourth: "[Projeto presente no GitHub] Para o desenvolvimento dessa página, eu propus um desafio extra para mim mesmo, ao usar pela primeira vez o Vue.js com Bootstrap para o desenvolvimento deste currículo. Isto tudo para tentar mostrar que eu tenho a capacidade de aprendizado para cumprir uma atividade designada.",
         TextFifth: "[Projeto presente no GitHub] Neste projeto, houve o desenvolvimento da versão inicial de uma galeria de fotos para cartas de TCG, desenvolvido em Vue.js com Quasar e Express, ainda na versão inicial, e assim como o projeto \"Cadastrare\", a compra de dominio e o levantamento do servidor foram realizados por mim.",
         TextSixth: "[Projeto presente no GitHub] Este projeto envolveu o desenvolvimento de um sistema de gerenciamento de fichas de pacientes e agenda de um consultório de dentista, desenvolvido com Vue.js com Quasar e Express. A maior contribuição deste projeto para minha experiência, foi o levantamento do servidor web em ubuntu por linha de comando e compra de domínio.",
         TextSeventh: "O 'Agriv' é um sistema de coleta de dados do solo através de uma Rede de Sensores sem Fio, desenvolvido como o trabalho de conclusão de curso para o curso de Engenharia de Computação. Este projeto foi feito com mais um acadêmico, eu fiquei responsável principalmente pela montagem do hardware, " + 
@@ -155,7 +157,9 @@ export default {
       Skills: {
         Title: "Minhas Habilidades",
         TextOne: "Esta seção tem o objetivo de gerar uma visão mais dinâmica e direta de minhas habilidades e conhecimentos, a leitura da seção de 'Experiência' serve como um complemento, aprofundando um pouco mais sobre o nível de conhecimento e habilidades que tenho. " +
-          "Listados abaixo estão ferramentas e frameworks diversos que sintetizam de maneira bem compacta meu conhecimento e experiêcia"
+          "Listados abaixo estão ferramentas e frameworks diversos que sintetizam de maneira bem compacta meu conhecimento e experiêcia",
+        CardOne: "Principal",
+        CardTwo: "Extra"
       }
     }
   }
