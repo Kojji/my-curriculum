@@ -3,46 +3,23 @@
     <h2 class="my-4">{{$t('InfoCards.Skills.Title')}}</h2>
     <hr />
     <div class="row">
-			<div class="col-4">
+			<div class="col-4 col-lg-3">
         <div class="icon-box">
           <h4 class="pt-3">{{$t('InfoCards.Skills.CardOne')}}</h4>
           <div class="row justify-content-center">
-            <div :key="skill.name" v-for="skill of cardMainIcons" class="col-sm-6 col-lg-4 col-12">
+            <div :key="skill.name" v-for="skill of cardMainIcons" class="col-sm-6 col-12">
               <div class="p-3">
                 <img :src="skill.iconUrl" class="rounded" alt="...">
               </div>
               <p class="icon-text">{{skill.name}}</p>
             </div>
           </div>
-          <h4 class="mt-3 pt-3">{{$t('InfoCards.Skills.CardTwo')}}</h4>
-          <div class="row justify-content-center">
-            <div :key="skill.name" v-for="skill of cardExtraIcons" class="col-sm-6 col-lg-4 col-12">
-              <div class="p-3">
-                <img :src="skill.iconUrl" class="rounded" alt="...">
-              </div>
-              <p class="icon-text">{{skill.name}}</p>
-            </div>
-          </div>
-
-          <div class="section">Express</div>
-          <div class="section">Github</div>
-          <div class="section">Quasar</div>
-          <div class="section">Vuetify</div>
-          <h3>Implementações e Leituras Simples</h3>
-          <div class="section">Azure</div>
-          <div class="section">Google Cloud</div>
-          <div class="section">Docker</div>
-          <div class="section">Adonisjs</div>
-          <div class="section">CakePHP</div>
-          <h3>Outros Conhecimentos</h3>
-          <div class="section">shotcut</div>
-          <div class="section">photoshop</div>
-          <div class="section">gimp</div>
-          <div class="section">excel</div>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-8 col-lg-9">
         <p class="content-text">{{$t('InfoCards.Skills.TextOne')}}</p>
+        <p class="content-text">{{$t('InfoCards.Skills.TextTwo')}}</p>
+        <p class="content-text">{{$t('InfoCards.Skills.TextTree')}}</p>
       </div>
     </div>
   </div>
@@ -63,9 +40,7 @@ export default {
           name: "Vue.js",
           iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
           alt: "vuejs icon"
-        }
-      ],
-      cardExtraIcons: [
+        },
         {
           name: "Firebase",
           iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",

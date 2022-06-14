@@ -100,6 +100,7 @@ export default {
 .item{
   transition: all .3s;
   padding: 15px 0;
+  margin: 0px 0.25%;
   border-style: solid;
   cursor: pointer;
   border-width: 1px;

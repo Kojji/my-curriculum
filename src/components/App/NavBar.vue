@@ -23,7 +23,7 @@ export default {
   name: 'NavBar',
   data() {
     return {
-      language: detectLanguage() == 'pt' ? 'Português' : 'English'
+      language: detectLanguage() == 'pt' ? 'Português' : 'English',
     }
   },
   methods: {
