@@ -175,8 +175,8 @@ export default {
 }
 
 .accordion-button:not(.collapsed){
-  background-color: var(--secondary-color);
-  color: var(--light-color);
+  background-color: var(--light-color);
+  color: var(--accent-color);
   font-weight: bold;
 }
 
