@@ -19,7 +19,8 @@
       <div class="col-8 col-lg-9">
         <p class="content-text">{{$t('InfoCards.Skills.TextOne')}}</p>
         <p class="content-text">{{$t('InfoCards.Skills.TextTwo')}}</p>
-        <p class="content-text">{{$t('InfoCards.Skills.TextTree')}}</p>
+        <p class="content-text">{{$t('InfoCards.Skills.TextThree')}}</p>
+        <p class="content-text">{{$t('InfoCards.Skills.TextFour')}}</p>
       </div>
     </div>
   </div>
@@ -56,11 +57,11 @@ export default {
           iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
           alt: "typescript icon"
         },
-        {
-          name: "Docker",
-          iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-          alt: "docker icon"
-        },
+        // {
+        //   name: "Docker",
+        //   iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        //   alt: "docker icon"
+        // },
       ]
     }
   }

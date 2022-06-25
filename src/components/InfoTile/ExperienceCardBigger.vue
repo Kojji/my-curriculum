@@ -13,7 +13,7 @@
 					<a class="list-group-item list-group-item-action" href="#list-item-3">{{$t('InfoCards.Experience.TitleThird')}}</a>
 					<h4 class="mt-3">{{$t('InfoCards.Experience.SectionTwo')}}</h4>
 					<a class="list-group-item list-group-item-action" href="#list-item-4">{{$t('InfoCards.Experience.TitleFourth')}}</a>
-					<a class="list-group-item list-group-item-action" href="#list-item-5">{{$t('InfoCards.Experience.TitleFifth')}}</a>
+					<!-- <a class="list-group-item list-group-item-action" href="#list-item-5">{{$t('InfoCards.Experience.TitleFifth')}}</a> -->
 					<a class="list-group-item list-group-item-action" href="#list-item-6">{{$t('InfoCards.Experience.TitleSixth')}}</a>
 					<a class="list-group-item list-group-item-action" href="#list-item-7">{{$t('InfoCards.Experience.TitleSeventh')}}</a>
 					<a class="list-group-item list-group-item-action" href="#list-item-8">{{$t('InfoCards.Experience.TitleEigth')}}</a>
@@ -39,8 +39,8 @@
 				<h4 class="mt-3 mb-2">{{$t('InfoCards.Experience.SectionTwo')}}</h4>
 				<h5 id="list-item-4">{{$t('InfoCards.Experience.TitleFourth')}}</h5>
 				<p class="content-item">{{$t('InfoCards.Experience.TextFourth')}}</p>
-				<h5 id="list-item-5">{{$t('InfoCards.Experience.TitleFifth')}}</h5>
-				<p class="content-item">{{$t('InfoCards.Experience.TextFifth')}}</p>
+				<!-- <h5 id="list-item-5">{{$t('InfoCards.Experience.TitleFifth')}}</h5>
+				<p class="content-item">{{$t('InfoCards.Experience.TextFifth')}}</p> -->
 				<h5 id="list-item-6">{{$t('InfoCards.Experience.TitleSixth')}}</h5>
 				<p class="content-item">{{$t('InfoCards.Experience.TextSixth')}}</p>
 				<h5 id="list-item-7">{{$t('InfoCards.Experience.TitleSeventh')}}</h5>

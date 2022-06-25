@@ -31,6 +31,20 @@
         </video>
         
       </div>
+      <div class="card col-12 my-2 py-1">
+        <div class="card-body pb-0">
+          <h5 class="card-title"><a href="https://codepen.io/kojji/full/poaYvVL" target="_blank" class="link-info">Surfing Pikachu</a></h5>
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page">{{$t('InfoCards.AnimationCard.NavMessage')}}</a>
+          </li>
+        </ul>
+        <video @mouseover="playOnHover($refs.surfingPikachuVid)" @mouseleave="pauseOnLeave($refs.surfingPikachuVid)" ref="surfingPikachuVid">
+          <source :src="surfingPikachu" type="video/mp4">
+        </video>
+        
+      </div>
     </div>
   </div>
 </template>
@@ -41,7 +55,8 @@ export default {
   data() {
     return {
       beachWavesVideo: require("@/assets/videos/shortVer.mp4"),
-      cityLightsVideo: require("@/assets/videos/city_lights.mp4")
+      cityLightsVideo: require("@/assets/videos/city_lights.mp4"),
+      surfingPikachu: require("@/assets/videos/surfing.mp4")
     }
   },
   methods: {

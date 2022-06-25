@@ -66,7 +66,7 @@
             <div class="accordion-body">{{$t('InfoCards.Experience.TextFourth')}}</div>
           </div>
         </div>
-        <div class="accordion-item">
+        <!-- <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               {{$t('InfoCards.Experience.TitleFifth')}}
@@ -75,7 +75,7 @@
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#experience-accordion">
             <div class="accordion-body">{{$t('InfoCards.Experience.TextFifth')}}</div>
           </div>
-        </div>
+        </div> -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
